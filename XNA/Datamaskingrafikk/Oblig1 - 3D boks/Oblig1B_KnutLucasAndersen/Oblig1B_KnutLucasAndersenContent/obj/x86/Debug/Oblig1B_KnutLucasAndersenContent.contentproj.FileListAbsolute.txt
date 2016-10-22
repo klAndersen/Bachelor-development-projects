@@ -1,0 +1,2 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1B_KnutLucasAndersen\Oblig1B_KnutLucasAndersenContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1B_KnutLucasAndersen\Oblig1B_KnutLucasAndersenContent\obj\x86\Debug\ResolveAssemblyReference.cache

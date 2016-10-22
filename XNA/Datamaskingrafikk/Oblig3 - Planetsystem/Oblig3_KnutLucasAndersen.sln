@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oblig3_KnutLucasAndersen", "Oblig3_KnutLucasAndersen\Oblig3_KnutLucasAndersen\Oblig3_KnutLucasAndersen.csproj", "{A17E4E9C-5940-4B29-8F12-5CBA04E8858C}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Oblig3_KnutLucasAndersenContent", "Oblig3_KnutLucasAndersen\Oblig3_KnutLucasAndersenContent\Oblig3_KnutLucasAndersenContent.contentproj", "{27442B3F-EDAB-4B05-A5F8-947D49DAE8E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A17E4E9C-5940-4B29-8F12-5CBA04E8858C}.Debug|x86.ActiveCfg = Debug|x86
+		{A17E4E9C-5940-4B29-8F12-5CBA04E8858C}.Debug|x86.Build.0 = Debug|x86
+		{A17E4E9C-5940-4B29-8F12-5CBA04E8858C}.Release|x86.ActiveCfg = Release|x86
+		{A17E4E9C-5940-4B29-8F12-5CBA04E8858C}.Release|x86.Build.0 = Release|x86
+		{27442B3F-EDAB-4B05-A5F8-947D49DAE8E7}.Debug|x86.ActiveCfg = Debug|x86
+		{27442B3F-EDAB-4B05-A5F8-947D49DAE8E7}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

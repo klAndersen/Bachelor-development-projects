@@ -1,0 +1,8 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\bin\x86\Debug\Content\effects.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\bin\x86\Debug\Content\heightmap.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\bin\x86\Debug\Oblig6_Oppg2_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\bin\x86\Debug\Oblig6_Oppg2_KnutLucasAndersen.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\obj\x86\Debug\Oblig6_Oppg2_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig6_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\Oblig6_Oppg2_KnutLucasAndersen\obj\x86\Debug\Oblig6_Oppg2_KnutLucasAndersen.pdb

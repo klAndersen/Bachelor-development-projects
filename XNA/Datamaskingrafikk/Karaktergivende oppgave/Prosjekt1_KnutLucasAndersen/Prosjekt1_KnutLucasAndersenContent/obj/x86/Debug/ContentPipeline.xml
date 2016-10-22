@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Modeller\Bil.FBX</Source>
+      <Name>Modeller\Bil</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Bil.xnb</Output>
+      <Time>2012-11-25T18:27:32.4659807+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Modeller\Bil_0.xml</Key>
+        <Value>2012-11-28T09:30:19.9002097+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\19CC4206\Bil.fbm\UVW Grafikkkart_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Modeller\Flagg.FBX</Source>
+      <Name>Modeller\Flagg</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Flagg.xnb</Output>
+      <Time>2012-11-25T18:27:32.4659807+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Modeller\Flagg_0.xml</Key>
+        <Value>2012-11-28T09:30:20.4150106+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\9F5842D0\Flagg.fbm\Flagg_UVW - Fargelagt_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Modeller\Tribune.FBX</Source>
+      <Name>Modeller\Tribune</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Tribune.xnb</Output>
+      <Time>2012-11-25T18:27:32.4815807+01:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Modeller\Tribune_0.xml</Key>
+        <Value>2012-11-28T09:30:20.9922116+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Vei_UVW - Farget_0.xnb</Request>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Bensinstasjon _UVW- Farget_0.xnb</Request>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Garasje_UVW - Farget_0.xnb</Request>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Splebtte_UVW - Farget_0.xnb</Request>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Tribune_UVW - Farget_0.xnb</Request>
+      <Request>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\skyDome_CLR_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Sprites\explosion.png</Source>
+      <Name>Sprites\explosion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\explosion.xnb</Output>
+      <Time>2012-11-26T12:51:43.5007115+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Girskifte2.png</Source>
+      <Name>Sprites\Girskifte2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\Girskifte2.xnb</Output>
+      <Time>2012-11-26T15:23:16.1479059+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\ArialFont.spritefont</Source>
+      <Name>Sprites\ArialFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\ArialFont.xnb</Output>
+      <Time>2012-11-26T16:16:52.8481908+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\BoldArialFont.spritefont</Source>
+      <Name>Sprites\BoldArialFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\BoldArialFont.xnb</Output>
+      <Time>2012-11-26T16:28:26.8761832+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Lyd&amp;Musikk\Atmos.mp3</Source>
+      <Name>Lyd&amp;Musikk\Atmos</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\Atmos.xnb</Output>
+      <Extra>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\Atmos.wma</Extra>
+      <Time>2012-11-25T19:07:16.0439252+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Lyd&amp;Musikk\DrDestru.mp3</Source>
+      <Name>Lyd&amp;Musikk\DrDestru</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\DrDestru.xnb</Output>
+      <Extra>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\DrDestru.wma</Extra>
+      <Time>2012-11-25T19:06:30.7882489+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Lyd&amp;Musikk\partybie.mp3</Source>
+      <Name>Lyd&amp;Musikk\partybie</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\partybie.xnb</Output>
+      <Extra>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\partybie.wma</Extra>
+      <Time>2012-11-25T18:11:19.9128685+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Lyd&amp;Musikk\skid.mp3</Source>
+      <Name>Lyd&amp;Musikk\skid</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&amp;Musikk\skid.xnb</Output>
+      <Time>2012-11-25T19:08:30.560451+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Modeller\Bil.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Modeller\Bil_0.xml</Output>
+      <Time>2012-11-25T18:27:32.4659807+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\19CC4206\Bil.fbm\UVW Grafikkkart.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\19CC4206\Bil.fbm\UVW Grafikkkart_0.xnb</Output>
+      <Time>2012-11-28T09:30:18.6054074+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Modeller\Flagg.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Modeller\Flagg_0.xml</Output>
+      <Time>2012-11-25T18:27:32.4659807+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\9F5842D0\Flagg.fbm\Flagg_UVW - Fargelagt.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\9F5842D0\Flagg.fbm\Flagg_UVW - Fargelagt_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.3994106+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Modeller\Tribune.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Modeller\Tribune_0.xml</Output>
+      <Time>2012-11-25T18:27:32.4815807+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\Vei_UVW - Farget.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Vei_UVW - Farget_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.649011+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\Bensinstasjon _UVW- Farget.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Bensinstasjon _UVW- Farget_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.649011+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\Garasje_UVW - Farget.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Garasje_UVW - Farget_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.649011+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\Søplebøtte_UVW - Farget.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Splebtte_UVW - Farget_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.649011+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\Tribune_UVW - Farget.jpg</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Tribune_UVW - Farget_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.649011+01:00</Time>
+    </Item>
+    <Item>
+      <Source>obj\x86\Debug\FBX\281043C8\Tribune.fbm\skyDome_CLR.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\skyDome_CLR_0.xnb</Output>
+      <Time>2012-11-28T09:30:20.6646111+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersenContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersenContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-08-29T13:28:05.0272269+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

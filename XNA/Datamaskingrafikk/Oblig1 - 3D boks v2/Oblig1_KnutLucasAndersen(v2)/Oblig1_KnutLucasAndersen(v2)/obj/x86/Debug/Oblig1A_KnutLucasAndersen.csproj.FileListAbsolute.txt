@@ -1,0 +1,12 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\bin\x86\Debug\Oblig1_KnutLucasAndersen(v2).exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\bin\x86\Debug\Oblig1_KnutLucasAndersen(v2).pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Oblig1_KnutLucasAndersen(v2).exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Oblig1_KnutLucasAndersen(v2).pdb
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\bin\x86\Debug\Oblig1_KnutLucasAndersen(v2).exe
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\bin\x86\Debug\Oblig1_KnutLucasAndersen(v2).pdb
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\ResolveAssemblyReference.cache
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Oblig1_KnutLucasAndersen(v2).exe
+\\taraldsvik\home$\501629\Desktop\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\Oblig1_KnutLucasAndersen(v2)\obj\x86\Debug\Oblig1_KnutLucasAndersen(v2).pdb

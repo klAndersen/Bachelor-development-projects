@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>bricks.jpg</Source>
+      <Name>bricks</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\bin\x86\Debug\Content\bricks.xnb</Output>
+      <Time>2012-10-12T10:02:41.6806388+02:00</Time>
+    </Item>
+    <Item>
+      <Source>kaal.png</Source>
+      <Name>kaal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\bin\x86\Debug\Content\kaal.xnb</Output>
+      <Time>2012-10-12T10:03:00.8750368+02:00</Time>
+    </Item>
+    <Item>
+      <Source>kube.FBX</Source>
+      <Name>kube</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\bin\x86\Debug\Content\kube.xnb</Output>
+      <Time>2012-10-12T10:02:20.9600043+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\kube_0.xml</Key>
+        <Value>2012-10-12T10:06:33.7283024+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>sphere.x</Source>
+      <Name>sphere</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\bin\x86\Debug\Content\sphere.xnb</Output>
+      <Time>2012-10-12T10:02:52.5581973+02:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\sphere_0.xml</Key>
+        <Value>2012-10-12T10:06:34.1345446+02:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>kube.FBX</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\kube_0.xml</Output>
+      <Time>2012-10-12T10:02:20.9600043+02:00</Time>
+    </Item>
+    <Item>
+      <Source>sphere.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\sphere_0.xml</Output>
+      <Time>2012-10-12T10:02:52.5581973+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersenContent\</RootDirectory>
+      <LoggerRootDirectory>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\</LoggerRootDirectory>
+      <IntermediateDirectory>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersenContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>\\taraldsvik\home$\501629\my documents\visual studio 2010\Projects\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\Oblig4_KnutLucasAndersen\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-06-28T14:15:24.6808304+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

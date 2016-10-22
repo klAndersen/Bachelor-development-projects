@@ -1,0 +1,6 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\bin\x86\Debug\BilDemoBibliotek.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\bin\x86\Debug\BilDemoBibliotek.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\obj\x86\Debug\BilDemoBibliotek.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\BilDemoBibliotek\obj\x86\Debug\BilDemoBibliotek.pdb

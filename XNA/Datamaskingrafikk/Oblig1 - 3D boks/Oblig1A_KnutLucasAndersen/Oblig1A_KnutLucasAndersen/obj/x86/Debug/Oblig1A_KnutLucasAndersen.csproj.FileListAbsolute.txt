@@ -1,0 +1,12 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\bin\x86\Debug\Oblig1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\bin\x86\Debug\Oblig1_KnutLucasAndersen.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\obj\x86\Debug\Oblig1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen2\Oblig1_KnutLucasAndersen\Oblig1_KnutLucasAndersen\obj\x86\Debug\Oblig1_KnutLucasAndersen.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\bin\x86\Debug\Oblig1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\bin\x86\Debug\Oblig1_KnutLucasAndersen.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\obj\x86\Debug\Oblig1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Oblig1_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\Oblig1A_KnutLucasAndersen\obj\x86\Debug\Oblig1_KnutLucasAndersen.pdb

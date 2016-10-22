@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilDemoBibliotek</name>
+    </assembly>
+    <members>
+        <member name="T:BilDemoBibliotek.FlaggStruktur">
+            <summary>
+            En struct som inneholder verdier for Flagg. Flagg er en modell 
+            som legges ut på veien, som gir bruker poeng ved sammenstøt/kollisjon.
+            Denne struct'n er KUN brukbar til flaggmodellen, da den er lagd med denne 
+            hensikten.
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.FlaggStruktur.FlaggModell">
+            <summary>
+            Henter/setter modellen
+            (Model)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.FlaggStruktur.Posisjon">
+            <summary>
+            Henter/setter posisjonen hvor flagget skal settes ut
+            (Vector3)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.FlaggStruktur.TegnFlagg">
+             <summary>
+            Henter/setter  om flagg skal tegnes på skjerm
+            (bool)
+             </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.FlaggStruktur.FlaggMatrise">
+            <summary>
+            Henter/setter matrisen som inneholder verdiene til modellen
+            (Matrix[])
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.XNAUtils">
+            <summary>
+            Klasse som oppretter BoundingBox og BoundingSphere
+            Tatt fra XNA Game Programming Recipes 3.0 av Riemer, s. 102
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.QuaternionKamera">
+             <summary>
+             Dette er en Kamera-klasse basert på Quaternion, som i tillegg 
+             håndterer input fra bruker (tastaturinput). 
+            <para>
+             Dette betyr at klassen har ansvar for posisjonering og forflytting 
+             både av kamera og bilen som bruker kontrollerer.
+             </para>
+             For å unngå problemer med arv og overstyring av metoder er klassen forseglet (sealed).
+             Klassen er delvis basert på Riemers Quaternion s. 50 - 57 i Game XNA 3.0 Programming Recipes
+             </summary>
+        </member>
+        <member name="F:BilDemoBibliotek.QuaternionKamera.REVERS">
+            <summary>
+            Verdien for Gir: Revers
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.QuaternionKamera.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>
+            Konstruktøren til QuaternionKamera, her opprettes en kobling 
+            til klassen LydAvspilling som håndterer lyd og musikk.
+            </summary>
+            <param name="game">Objekt av Game</param>
+        </member>
+        <member name="M:BilDemoBibliotek.QuaternionKamera.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run. This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.QuaternionKamera.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:BilDemoBibliotek.QuaternionKamera.UpdateInput">
+            <summary>
+            Oppdaterer kameraposisjon og forflytning basert på hvilken tast som ble trykket, 
+            og det sjekkes også at gjeldende tast ikke er holdt inne
+            (dette for å unngå at gir går fra 1 -> 4 på et tastetrykk)
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.QuaternionKamera.OppdaterPosisjon(Microsoft.Xna.Framework.Vector3,System.Single)">
+            <summary>
+            Oppdaterer bilens posisjon basert på knapp som ble trykket
+            </summary>
+            <param name="nyPosisjon">Den nye posisjonen: Vector3</param>
+            <param name="venstrehoyreRotasjon">rotasjon på x-aksen (mot høyre eller mot venstre): float</param>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.Posisjon">
+            <summary>
+            Returnerer kameraets gjeldene posisjon (Vector3)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.Rotasjon">
+            <summary>
+            Returnerer kameraets gjeldende rotasjon (Quaternion)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.ViewAngle">
+            <summary>
+            Hent eller sett verdien for ViewAngle
+            (brukes til oppretting av ProjectionMatrix)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.AspectRatio">
+            <summary>
+            Hent eller sett verdien for AspectRatio
+            (brukes til oppretting av ProjectionMatrix)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.NearPlane">
+            <summary>
+            Hent eller sett verdien for NearPlane
+            (brukes til oppretting av ProjectionMatrix)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.FarPlane">
+            <summary>
+            Hent eller sett verdien for FarPlane
+            (brukes til oppretting av ProjectionMatrix)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.ViewMatrix">
+            <summary>
+            Returnerer view matrisen
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.ProjectionMatrix">
+            <summary>
+            Returnerer projection matrisen
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.GirNivaa">
+            <summary>
+            Returnerer aktivt gir
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.Fart">
+            <summary>
+            Returnerer farten basert på hvilket gir som er aktivt.
+            Farten starter på 0.05f og hastighet = fart * gir
+            Eksempelvis: 3. gir => 0.05f * 3 = 0.15f
+            Farten ved reversering er 0.05f
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.VisHjelp">
+            <summary>
+            Returnerer true/false basert på om bruker vil se/skjule Hjelp
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.Synsvinkel">
+            <summary>
+            Returnerer synsvinkelen (zoom)
+            Det er to visninger; bak bilen og 
+            frontvindu (ser ikke bilen)
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.QuaternionKamera.StartNyttSpill">
+            <summary>
+            Returner boolsk verdi basert på om bruker ønsker å 
+            starte et nytt spill. Hvis nytt spill SKAL startes, 
+            sett verdi til true. Hvis nytt spill HAR startet, 
+            sett verdi til false.
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.SpriteBehandling">
+            <summary>
+            Denne klassen tar for seg alt som har med Sprites å gjøre.
+            Dette gjelder ting som tekst, bilder o.l.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>
+            Konstruktøren til SpriteBehandling
+            </summary>
+            <param name="game">Objekt av Game</param>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.LoadContent">
+            <summary>
+            Laster inn Sprites
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Utfører selve tegningen av modellene.
+            Overrider Draw(GameTime)
+            </summary>
+            <param name="gameTime"></param>
+        </member>
+        <member name="M:BilDemoBibliotek.SpriteBehandling.VisInformasjonPaaSkjerm">
+            <summary>
+            Oppretter forskjellige tekststrenger som skal vises på skjerm
+            </summary>
+        </member>
+        <member name="P:BilDemoBibliotek.SpriteBehandling.AktivMusikk">
+            <summary>
+            Henter/setter en tallverdi for hvilken sang som er aktiv
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.PartikkelInformasjon">
+            <summary>
+            Struct som inneholder informasjonen/oppbyggingen av partikkelen(e)
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.Partikkeleffekt">
+            <summary>
+            Denne klassen tar for seg partikkeleffekter.
+            Grunnlaget er basert på oppsett fra Riemer;
+            http://www.riemers.net/eng/Tutorials/XNA/Csharp/Series2D/Particles.php
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>
+            Konstruktøren til PartikkelEffekt klassen
+            </summary>
+            <param name="game">Objekt av Game</param>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.SkapPartikkeleffekt(Microsoft.Xna.Framework.Vector2,System.Int32,System.Single,System.Single,Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Oppretter/skaper en partikkeleffekt
+            </summary>
+            <param name="startPosisjon">Startposisjonen for partikkeleffekten</param>
+            <param name="antallPartikler">Antall partikler som skal lages</param>
+            <param name="strl">Størrelsen på partikkelen</param>
+            <param name="maxAlder">Partikkelens levetid</param>
+            <param name="gameTime">Objekt av GameTime</param>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.LoadContent">
+            <summary>
+            LoadContent will be called once per game and is the place to load
+            all of your content.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.UnloadContent">
+            <summary>
+            UnloadContent will be called once per game and is the place to unload
+            all content.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game to run logic such as updating the world,
+            checking for collisions, gathering input, and playing audio.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:BilDemoBibliotek.Partikkeleffekt.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            This is called when the game should draw itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="T:BilDemoBibliotek.ModellBehandling">
+            <summary>
+            Denne klassen tar for seg tegning av modeller på skjerm og i tillegg har den 
+            kollisjonsdeteksjon. Kollisjonsdeteksjonen sjekker om bil og flagg kolliderer, 
+            og hvis de kolliderer så genereres poeng og flagg fjernes fra skjerm.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.ModellBehandling.#ctor(Microsoft.Xna.Framework.Game)">
+            <summary>
+            Konstruktøren til ModellBehandling
+            </summary>
+            <param name="game">Objekt av Game</param>
+        </member>
+        <member name="M:BilDemoBibliotek.ModellBehandling.Initialize">
+            <summary>
+            Allows the game component to perform any initialization it needs to before starting
+            to run.  This is where it can query for any required services and load content.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.ModellBehandling.LoadContent">
+            <summary>
+            Override LoadContent; 
+            Laster inn modellene som skal brukes
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.ModellBehandling.Update(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Allows the game component to update itself.
+            </summary>
+            <param name="gameTime">Provides a snapshot of timing values.</param>
+        </member>
+        <member name="M:BilDemoBibliotek.ModellBehandling.Draw(Microsoft.Xna.Framework.GameTime)">
+            <summary>
+            Utfører selve tegningen av modellene.
+            Overrider Draw(GameTime)
+            </summary>
+            <param name="gameTime">Objekt av GameTime</param>
+        </member>
+        <member name="P:BilDemoBibliotek.ModellBehandling.Poeng">
+            <summary>
+            Returnerer brukers poengsum
+            </summary>
+        </member>
+        <member name="T:BilDemoBibliotek.LydAvspilling">
+            <summary>
+            Denne klassen tar seg av alt som har med lyd og musikk å gjøre.
+            </summary>
+        </member>
+        <member name="M:BilDemoBibliotek.LydAvspilling.StartAvspilling(System.Int32)">
+            <summary>
+            Starter avspilling av bakgrunnsmusikk.
+            </summary>
+            <param name="sang">Nummeret (int) på hvilken sang som skal avspilles (1 - 3)</param>
+        </member>
+    </members>
+</doc>

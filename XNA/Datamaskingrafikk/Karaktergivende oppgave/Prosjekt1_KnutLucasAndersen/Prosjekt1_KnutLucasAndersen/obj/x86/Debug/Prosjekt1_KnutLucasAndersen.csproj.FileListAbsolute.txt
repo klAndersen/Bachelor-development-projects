@@ -1,0 +1,31 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Bil.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Flagg.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Modeller\Tribune.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\explosion.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\Girskifte2.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\ArialFont.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Sprites\BoldArialFont.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\Atmos.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\DrDestru.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\partybie.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\skid.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\19CC4206\Bil.fbm\UVW Grafikkkart_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\9F5842D0\Flagg.fbm\Flagg_UVW - Fargelagt_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Vei_UVW - Farget_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Bensinstasjon _UVW- Farget_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Garasje_UVW - Farget_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Splebtte_UVW - Farget_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\Tribune_UVW - Farget_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\FBX\281043C8\Tribune.fbm\skyDome_CLR_0.xnb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\Atmos.wma
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\DrDestru.wma
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Content\Lyd&Musikk\partybie.wma
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Prosjekt1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\Prosjekt1_KnutLucasAndersen.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\BilDemoBibliotek.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\BilDemoBibliotek.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\bin\x86\Debug\BilDemoBibliotek.xml
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\obj\x86\Debug\Prosjekt1_KnutLucasAndersen.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\XNA\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\obj\x86\Debug\Prosjekt1_KnutLucasAndersen.pdb

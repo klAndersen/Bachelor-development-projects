@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prosjekt1_KnutLucasAndersen", "Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersen.csproj", "{8E415FF2-A0FD-4BAE-BDE9-ED71384DAC1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prosjekt1_KnutLucasAndersenContent", "Prosjekt1_KnutLucasAndersen\Prosjekt1_KnutLucasAndersenContent\Prosjekt1_KnutLucasAndersenContent.contentproj", "{7D2A2981-A8A2-42AA-8805-2966FB24BCB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilDemoBibliotek", "BilDemoBibliotek\BilDemoBibliotek.csproj", "{7087DAC6-17E2-4AC5-8A3C-7331818F7A27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E415FF2-A0FD-4BAE-BDE9-ED71384DAC1E}.Debug|x86.ActiveCfg = Debug|x86
+		{8E415FF2-A0FD-4BAE-BDE9-ED71384DAC1E}.Debug|x86.Build.0 = Debug|x86
+		{8E415FF2-A0FD-4BAE-BDE9-ED71384DAC1E}.Release|x86.ActiveCfg = Release|x86
+		{8E415FF2-A0FD-4BAE-BDE9-ED71384DAC1E}.Release|x86.Build.0 = Release|x86
+		{7D2A2981-A8A2-42AA-8805-2966FB24BCB0}.Debug|x86.ActiveCfg = Debug|x86
+		{7D2A2981-A8A2-42AA-8805-2966FB24BCB0}.Release|x86.ActiveCfg = Release|x86
+		{7087DAC6-17E2-4AC5-8A3C-7331818F7A27}.Debug|x86.ActiveCfg = Debug|x86
+		{7087DAC6-17E2-4AC5-8A3C-7331818F7A27}.Debug|x86.Build.0 = Debug|x86
+		{7087DAC6-17E2-4AC5-8A3C-7331818F7A27}.Release|x86.ActiveCfg = Release|x86
+		{7087DAC6-17E2-4AC5-8A3C-7331818F7A27}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
