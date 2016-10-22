@@ -1,0 +1,20 @@
+        private void leggTilLokomotiv() {
+            leggTilTilbehor();
+            //rename kolonnene for å tilpasse lokomotiv
+            dgvModeller.Columns[4].Name = "columnAarsmodell";
+            dgvModeller.Columns[5].Name = "columnStrl";
+            //dgvModeller.Columns[6].Name = "columnLand";
+            //rename tekst i header for å tilpasse lokomotiv
+            dgvModeller.Columns[4].HeaderText = "Årsmodell";
+            dgvModeller.Columns[5].HeaderText = "Størrelse";
+            //av uviss grunn legges en kolonne ekstra kolonne til, så den må fjernes
+            dgvModeller.Columns.RemoveAt(6);
+            //opprett en kolonne som inneholder comboboxer
+            DataGridViewComboBoxColumn cmbKolonne = new DataGridViewComboBoxColumn();
+            //fyll combobox
+            foreach (Land land in Kontroll.kontrollInstans.returnLand()) {
+                cmbKolonne.Items.Add(land.getLand());
+            } //foreach       
+            dgvModeller.Columns.Add(cmbKolonne);
+            dgvModeller.Columns[6].HeaderText = "Land";
+        } //leggTilLokomotiv

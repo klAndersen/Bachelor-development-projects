@@ -1,0 +1,7 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\bin\Debug\ModellTog.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\bin\Debug\ModellTog.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\bin\Debug\Bamboo.Prevalence.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\obj\Debug\ModellTog.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\obj\Debug\ModellTog.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\ModellTog\togBibliotek\bin\Debug\modellTog.xml

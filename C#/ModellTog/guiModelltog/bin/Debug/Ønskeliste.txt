@@ -1,0 +1,2 @@
+Modellnr: 1		Navn: 1		Pris: 1		Salgssted: Stavanger
+Modellnr: 2		Navn: 2		Pris: 2		Salgssted: Sandnes

@@ -1,0 +1,879 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ModellTog</name>
+    </assembly>
+    <members>
+        <member name="T:modellTog.Produsent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:modellTog.Produsent.#ctor(System.Int32,System.String)">
+            <summary>
+            Konstruktør for produsent
+            </summary>
+            <param name="idProd">Produsentens ID</param>
+            <param name="produsent">Navn på produsenten</param>
+        </member>
+        <member name="M:modellTog.Produsent.getProdusentId">
+            <summary>
+            Henter produsentens ID
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Produsent.getProdusent">
+            <summary>
+            Henter produsentens navn
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Produsent.setProdusentId(System.Int32)">
+            <summary>
+            Setter produsentens ID
+            Bør ikke forandres foruten ved sletting
+            </summary>
+            <param name="idProd">Produsentens ID</param>
+        </member>
+        <member name="M:modellTog.Produsent.setProdusent(System.String)">
+            <summary>
+            Setter navnet på produsenten
+            </summary>
+            <param name="produsent">Produsentens navn</param>
+        </member>
+        <member name="T:modellTog.Kontroll">
+            <summary>
+            Kontroll klassen som fungerer som "kommunikasjon"
+            mellom grensesnitt og biblioteksklassene
+            </summary>
+        </member>
+        <member name="F:modellTog.Kontroll.kontrollInstans">
+            <summary>
+            ReadOnly variabel av klassen Kontroll som kaller på de forskjellige 
+            public funksjonene, static slik at den kalles ved oppstart
+            </summary>
+        </member>
+        <member name="M:modellTog.Kontroll.addTog(System.Int32,System.String,System.String,System.Int32,System.Double,System.Double,System.Int32)">
+            <summary>
+            Registrerer et nytt lokomotiv i listen, 
+            såfremt det ikke finnes en modell med oppgitt modellnr fra før
+            </summary>
+            <param name="mNr">Lokomotivets modellnr (int)</param>
+            <param name="navn">Lokomotivets navn</param>
+            <param name="type">Typebetegnelsen på lokomotivet</param>
+            <param name="aar">Lokomotivets årsmodell</param>
+            <param name="pris">Lokomotivets pris</param>
+            <param name="strl">Lokomotivets størrelse</param>
+            <param name="idLand">ID til landet lokomotivet kommer fra</param>
+        </member>
+        <member name="M:modellTog.Kontroll.addVogn(System.Int32,System.String,System.String,System.String,System.Double,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Registrerer en ny vogn i listen, 
+            såfremt det ikke finnes en modell med oppgitt modellnr fra før
+            </summary>
+            <param name="mNr">Vognens modellnr (int)</param>
+            <param name="navn">Vognens navn</param>
+            <param name="type">Typebetegnelsen på vognen</param>
+            <param name="epoke">Vognens epoke</param>
+            <param name="pris">Vognens pris</param>
+            <param name="strl">Vognens størrelse</param>
+            <param name="antall">Antall vogner av gitt modell</param>
+            <param name="idLand">ID til landet vognen kommer fra</param>
+        </member>
+        <member name="M:modellTog.Kontroll.addTilbehor(System.Int32,System.String,System.String,System.Double,System.Int32)">
+            <summary>
+            Registrerer ett nytt tilbehør i listen, 
+            såfremt det ikke finnes en modell med oppgitt modellnr fra før
+            </summary>
+            <param name="mNr">Tilbehørets modellnr (int)</param>
+            <param name="navn">Tilbehørets navn</param>
+            <param name="type">Typebetegnelsen på tilbehør (eks: perrong, strømforsyning, etc)</param>
+            <param name="pris">Tilbehørets pris</param>
+            <param name="idProd">Produsentens ID</param>
+        </member>
+        <member name="M:modellTog.Kontroll.addOnskeliste(System.Int32,System.String,System.Double,System.Int32)">
+            <summary>
+            Registrer et nytt ønske i listen, 
+            såfremt det ikke finnes et ønske med samme modellnr fra før
+            </summary>
+            <param name="mNr">Ønsket modells modellnr</param>
+            <param name="navn">Navn på ønsket modell</param>
+            <param name="pris">Pris på ønsket modell</param>
+            <param name="idSted">ID til salgssted</param>
+        </member>
+        <member name="M:modellTog.Kontroll.addLand(System.String)">
+            <summary>
+            Registrer ett nytt land, 
+            såfremt det ikke allerede er registrert
+            </summary>
+            <param name="land">Navn på landet</param>
+        </member>
+        <member name="M:modellTog.Kontroll.addProdusent(System.String)">
+            <summary>
+            Registrerer en ny produsent, 
+            såfremt den ikke allerede er registrert
+            </summary>
+            <param name="prod"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.addSalgssted(System.String)">
+            <summary>
+            Registrerer et nytt salgssted, 
+            såfremt det ikke allerede er registrert
+            </summary>
+            <param name="sted"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.finnesModellNr(System.Int32)">
+            <summary>
+            Sjekker om modellnr oppgitt er registrert, 
+            og kaster Exception dersom modellnr finnes fra før
+            </summary>
+            <param name="mNr">Modellnr som skal sjekkes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.finnesOnske(System.Int32)">
+            <summary>
+            Sjekker om et ønske med oppgitt modellnr er registrert, 
+            og kaster Exception dersom modellnr allerede er registrert på et ønske
+            </summary>
+            <param name="mNr">Modellnr som skal sjekkes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.finnesLand(System.String)">
+            <summary>
+            Sjekker om land oppgitt er registrert, 
+            og kaster Exception dersom land allerede er registrert
+            </summary>
+            <param name="land">Land som skal sjekkes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.finnesProdusent(System.String)">
+            <summary>
+            Sjekker om produsent oppgitt er registrert, 
+            og kaster Exception dersom produsent allerede er registrert
+            </summary>
+            <param name="prod">Produsent som skal sjekkes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.finnesSalgssted(System.String)">
+            <summary>
+            Sjekker om salgssted oppgitt er registrert, 
+            og kaster Exception dersom salgssted allerede er registrert
+            </summary>
+            <param name="sted">Salgssted som skal sjekkes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.findVogn(System.Int32)">
+            <summary>
+            Sjekker om vognen med oppgitt modellnr finnes, 
+            og returnerer vognen hvis den finnes, hvis ikke
+            returneres null
+            </summary>
+            <param name="mNr"></param>
+            <returns>Vogn | null</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findOnske(System.Int32)">
+            <summary>
+            Returnerer en liste med ønsker som matcher oppgitt 
+            modellnr
+            </summary>
+            <param name="mNr">Ønskets modellnr som skal finnes</param>
+            <returns>List&lt;Onskeliste&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findLand(System.Int32)">
+            <summary>
+            Returnerer navn på landet basert på oppgitt ID
+            </summary>
+            <param name="idland">Landets ID som skal finnes</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findLand(System.String)">
+            <summary>
+            Returnerer en liste over land basert på oppgitt verdi
+            </summary>
+            <param name="land">Landet som skal finnes</param>
+            <returns>List&lt;Land&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findProdusent(System.Int32)">
+            <summary>
+            Returnerer navnet på produsenten basert på oppgitt ID
+            </summary>
+            <param name="idProd">Produsentens ID som skal finnes</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findSalgssted(System.Int32)">
+            <summary>
+            Returnerer navnet på salgsstedet basert på oppgitt ID
+            </summary>
+            <param name="idSted">Salgsstedets ID som skal finnes</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findProdusent(System.String)">
+            <summary>
+            Returnerer en liste over produsenter basert på oppgitt verdi
+            </summary>
+            <param name="prod">Produsenten som skal finnes</param>
+            <returns>List&lt;Produsent&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.findSalgssted(System.String)">
+            <summary>
+            Returnerer en liste over salgssteder basert på oppgitt verdi
+            </summary>
+            <param name="sted">Salgssted som skal finnes</param>
+            <returns>List&lt;Salgssted&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countLokomotiv">
+            <summary>
+            Teller opp antallet lokomotiv og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countVogner">
+            <summary>
+            Teller opp antallet vogner og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countTilbehor">
+            <summary>
+            Teller opp antallet tilbehør og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countOnsker">
+            <summary>
+            Teller opp antallet ønsker og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countLand">
+            <summary>
+            Teller opp antallet land og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countProdusent">
+            <summary>
+            Teller opp antallet produsenter og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.countSalgssted">
+            <summary>
+            Teller opp antallet salgssteder og 
+            returner verdien
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnLand">
+            <summary>
+            Returnerer en array fylt med land
+            </summary>
+            <returns>Land[]</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnProdusent">
+            <summary>
+            Returnerer en array fylt med produsentene
+            </summary>
+            <returns>Produsent[]</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnSalgssted">
+            <summary>
+            Returnerer en array fylt med salgsstedene
+            </summary>
+            <returns>Salgssted[]</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnTogListe">
+            <summary>
+            Returnerer en liste fylt med alle lokomotivene
+            </summary>
+            <returns>List&lt;Tog&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnVognListe">
+            <summary>
+            Returnerer en liste fylt med alle vognene
+            </summary>
+            <returns>List&lt;Vogn&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnTilbehorListe">
+            <summary>
+            Returnerer en liste fylt med alt tilbehøret
+            </summary>
+            <returns>List&lt;Tilbehor&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.returnOnskeListe">
+            <summary>
+            Returnerer en liste fylt med alle ønskene
+            </summary>
+            <returns>List&lt;Onskeliste&gt;</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.delTog(System.Int32)">
+            <summary>
+            Sletter toget med oppgitt ID
+            </summary>
+            <param name="id">ID til toget som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delVogn(System.Int32)">
+            <summary>
+            Sletter vognen med oppgitt ID
+            </summary>
+            <param name="id">ID til vognen som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delTilbehor(System.Int32)">
+            <summary>
+            Sletter tilbehøret med oppgitt ID
+            </summary>
+            <param name="id">ID til tilbehøret som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delOnske(System.Int32)">
+            <summary>
+            Sletter ønsket med oppgitt ID
+            </summary>
+            <param name="id">ID til ønsket som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delLand(System.Int32)">
+            <summary>
+            Sletter land med oppgitt ID
+            </summary>
+            <param name="id">ID til land som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delProdusent(System.Int32)">
+            <summary>
+            Sletter produsent med oppgitt ID
+            </summary>
+            <param name="id">ID til produsent som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.delSalgssted(System.Int32)">
+            <summary>
+            Sletter salgssted med oppgitt ID
+            </summary>
+            <param name="id">ID til salgssted som skal slettes</param>
+        </member>
+        <member name="M:modellTog.Kontroll.sokMnr(System.Int32)">
+            <summary>
+            Søker gjennom alle listene etter modell(er) som matcher
+            oppgitt modellnr. Kaster Exception dersom modellnr det ble
+            søkt etter ikke finnes
+            </summary>
+            <param name="mNr">Modellnr som det skal søkes etter</param>
+            <returns>Spesifikason | Exception</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.sokNavn(System.String)">
+            <summary>
+            Søker gjennom alle listene etter modell(er) som matcher
+            oppgitt navn. Kaster Exception dersom navnet det ble søkt 
+            etter ikke finnes
+            </summary>
+            <param name="navn">Modellens navn det skal søkes etter</param>
+            <returns>Spesifikason | Exception</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.sokType(System.String)">
+            <summary>
+            Søker gjennom alle listene etter modell(er) som matcher
+            oppgitt type. Kaster Exception dersom typen søkt etter 
+            ikke finnes
+            </summary>
+            <param name="type">Typen det skal søkes etter (string)</param>
+            <returns>Spesifikason | Exception</returns>
+        </member>
+        <member name="M:modellTog.Kontroll.updateLokomotiv(System.Int32,System.String,System.String,System.Double,System.Int32,System.Double,System.String)">
+            <summary>
+            Oppdater lokomotiv med gitt modellnr
+            (alle verdier blir endret likegyldig om verdi er ny eller uforandret)
+            </summary>
+            <param name="mNr">Lokomotivets modellnr</param>
+            <param name="navn"></param>
+            <param name="type"></param>
+            <param name="pris"></param>
+            <param name="aarsmodell"></param>
+            <param name="strl"></param>
+            <param name="land"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateVogner(System.Int32,System.String,System.String,System.Double,System.String,System.Double,System.Int32,System.String)">
+            <summary>
+            Oppdater vogn med gitt modellnr
+            (alle verdier blir endret likegyldig om verdi er ny eller uforandret)
+            </summary>
+            <param name="mNr"></param>
+            <param name="navn"></param>
+            <param name="type"></param>
+            <param name="pris"></param>
+            <param name="epoke"></param>
+            <param name="strl"></param>
+            <param name="antall"></param>
+            <param name="land"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateTilbehor(System.Int32,System.String,System.String,System.Double,System.String)">
+            <summary>
+            Oppdater tilbehør med gitt modellnr
+            (alle verdier blir endret likegyldig om verdi er ny eller uforandret)
+            </summary>
+            <param name="mNr"></param>
+            <param name="navn"></param>
+            <param name="type"></param>
+            <param name="pris"></param>
+            <param name="produsent"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateOnsker(System.Int32,System.Int32,System.String,System.Double,System.String)">
+            <summary>
+            Oppdaterer ønsket med gitt ID
+            (alle verdier blir endret likegyldig om verdi er ny eller uforandret)
+            </summary>
+            <param name="id"></param>
+            <param name="mNr"></param>
+            <param name="navn"></param>
+            <param name="pris"></param>
+            <param name="salgssted"></param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateAntallVogner(System.Int32,System.Int32)">
+            <summary>
+            Oppdaterer antall vogner tilknyttet oppgitt modell
+            </summary>
+            <param name="mNr">Vognens modellnr</param>
+            <param name="antall">Antall vogner som skal registreres</param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateLand(System.Int32,System.String)">
+            <summary>
+            Oppdaterer landet; gir landet nytt navn
+            </summary>
+            <param name="id">Landets ID</param>
+            <param name="land">Nytt navn på landet</param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateProdusent(System.Int32,System.String)">
+            <summary>
+            Oppdaterer produsenten; gir produsent nytt navn
+            </summary>
+            <param name="id">Produsentens ID</param>
+            <param name="produsent">Nytt navn på produsenten</param>
+        </member>
+        <member name="M:modellTog.Kontroll.updateSalgssted(System.Int32,System.String)">
+            <summary>
+            Oppdaterer salgsstedet; gir salgssted nytt navn
+            </summary>
+            <param name="id">Salgsstedets ID</param>
+            <param name="salgssted">Nytt navn på salgsstedet</param>
+        </member>
+        <member name="M:modellTog.Kontroll.lagreAlt">
+            <summary>
+            Denne funksjonen lager et nytt snapshot.
+            </summary>
+        </member>
+        <member name="M:modellTog.Kontroll.skrivOnskeTilFil">
+            <summary>
+            Skriver ut ønskelisten til en tekstfil (.txt)
+            </summary>
+        </member>
+        <member name="M:modellTog.Kontroll.storForbokstav(System.String)">
+            <summary>
+            Omgjør første tegn i gitt tekst til stor bokstav
+            </summary>
+            <param name="tekst">Teksten som skal få stor forbokstav</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:modellTog.Tog">
+            <summary>
+            Sub-klasse for oppretting av Tog/Lokomotiv. 
+            Med dette menes da kun de som "styrer/leder" toget, m.a.o fronten av toget.
+            </summary>
+        </member>
+        <member name="T:modellTog.Spesifikasjon">
+            <summary>
+            Abstrakt klasse som inneholder spesifikasjon som gjelder for alle klassene.
+            Unntak er land, produsent, salgssted og ønskeliste (se klassen).
+            Alle felles metoder og funksjoner opprettes her, og har to egne
+            konstruktører - se tilhørende kommentar.
+            </summary>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.#ctor(System.Int32,System.String,System.String,System.Int32,System.Double,System.Double,System.Int32)">
+            <summary>
+            Konstruktør for lokomotiv(er)
+            </summary>
+            <param name="modellNr">Lokomotiv/Vognens modellnr</param>
+            <param name="navn">Navn på modellen</param>
+            <param name="type">Typebetegnelse</param>
+            <param name="aarsModell">Årsmodell</param>
+            <param name="pris">Modellens pris</param>
+            <param name="strl">Modellens størrelse</param>
+            <param name="idLand">Landets ID</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Double,System.Int32)">
+            <summary>
+            Konstruktør for vogn(er)
+            </summary>
+            <param name="modellNr">Lokomotiv/Vognens modellnr</param>
+            <param name="navn">Navn på modellen</param>
+            <param name="type">Typebetegnelse</param>
+            <param name="epoke">Vognens tidsepoke</param>
+            <param name="pris">Modellens pris</param>
+            <param name="strl">Modellens størrelse</param>
+            <param name="idLand">Landets ID</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.#ctor(System.Int32,System.String,System.String,System.Double)">
+            <summary>
+            Konstruktør for tilbehør
+            </summary>
+            <param name="modellNr">Tilbehørets modellnr (int)</param>
+            <param name="navn">Tilbehørets navn</param>
+            <param name="type">Typebetegnelsen på tilbehør (eks: perrong, strømforsyning, etc)</param>
+            <param name="pris">Tilbehørets pris</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getModellNr">
+            <summary>
+            Henter modellens modellnr
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getNavn">
+            <summary>
+            Henter modellens navn
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getType">
+            <summary>
+            Henter modellens type
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getAarsmodell">
+            <summary>
+            Henter modellens årsmodell
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getEpoke">
+            <summary>
+            Henter vognens tidsepoke
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getPris">
+            <summary>
+            Henter modellens pris
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getStrl">
+            <summary>
+            Henter modellens størrelse
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getAntall">
+            <summary>
+            Henter vognens antall
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.getLand">
+            <summary>
+            Henter modellens land ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setModellNr(System.Int32)">
+            <summary>
+            Setter modellnr (bør ikke endres foruten ved oppdatering)
+            </summary>
+            <param name="modellNr">Modellnr</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setNavn(System.String)">
+            <summary>
+            Setter modellens navn
+            </summary>
+            <param name="navn">Modellens navn</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setType(System.String)">
+            <summary>
+            Setter modellens typebetegnelse
+            </summary>
+            <param name="type">Modellens type</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setAarsmodell(System.Int32)">
+            <summary>
+            Setter modellens årsmodell
+            </summary>
+            <param name="aarsModell">Modellens årsmodell</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setEpoke(System.String)">
+            <summary>
+            Setter modellens tidsepoke
+            </summary>
+            <param name="epoke">Modellens tidsepoke</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setPris(System.Double)">
+            <summary>
+            Setter modellens pris
+            </summary>
+            <param name="pris">Modellens pris</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setStrl(System.Double)">
+            <summary>
+            Setter modellens størrelse
+            </summary>
+            <param name="strl">Modellens størrelse</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setAntall(System.Int32)">
+            <summary>
+            Setter antall vogner
+            </summary>
+            <param name="antall">Antall vogner av gitt modell</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.setIdLand(System.Int32)">
+            <summary>
+            Setter ID til landet
+            </summary>
+            <param name="idLand">Landets ID</param>
+        </member>
+        <member name="M:modellTog.Spesifikasjon.ToString">
+            <summary>
+            Overrides ToSTring() for subklasser
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Tog.#ctor(System.Int32,System.String,System.String,System.Int32,System.Double,System.Double,System.Int32)">
+            <summary>
+            Lokomotivets konstruktør.
+            Registrerer modellnr, navnet på toget/lokomotivet, typen, årsmodell,
+            prisen på toget/lokomotivet, størrelsen på toget/lokomotivet og 
+            ID på landet det kommer fra/tilhører
+            </summary>
+            <param name="mNr">Lokomotivets modellnr (int)</param>
+            <param name="navn">Lokomotivets navn</param>
+            <param name="type">Typebetegnelsen på lokomotivet</param>
+            <param name="aar">Lokomotivets årsmodell</param>
+            <param name="pris">Lokomotivets pris</param>
+            <param name="strl">Lokomotivets størrelse</param>
+            <param name="idLand">ID til landet lokomotivet kommer fra</param>
+        </member>
+        <member name="M:modellTog.Tog.ToString">
+            <summary>
+            Skriver ut modellnr, navnet, typen, årsmodell, størrelse og pris i denne rekkefølgen
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="T:modellTog.Land">
+            <summary>
+            Klassen land som inneholder verdier for hvilket land modellen tilhører 
+            (ikke hvor modellen er laget, men hvor modellen orginalt kommer fra).
+            </summary>
+        </member>
+        <member name="M:modellTog.Land.#ctor(System.Int32,System.String)">
+            <summary>
+            Konstruktøren for Land
+            </summary>
+            <param name="idLand">Landets ID</param>
+            <param name="land">Landets navn</param>
+        </member>
+        <member name="M:modellTog.Land.getIdLand">
+            <summary>
+            Henter landets ID
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Land.getLand">
+            <summary>
+            Henter navnet på landet
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Land.setIdLand(System.Int32)">
+            <summary>
+            ID'n til landet (autoinkrement)
+            Bør ikke forandres foruten ved sletting
+            </summary>
+            <param name="idLand">int</param>
+        </member>
+        <member name="M:modellTog.Land.setLand(System.String)">
+            <summary>
+            Sett nytt navn på landet
+            </summary>
+            <param name="land">Navn på landet</param>
+        </member>
+        <member name="T:modellTog.Tilbehor">
+            <summary>
+            Sub-klasse for oppretting av tilbehør. 
+            Dette er alt fra skinner og perronger, til små figurer og strømforsyning.
+            </summary>
+        </member>
+        <member name="M:modellTog.Tilbehor.#ctor(System.Int32,System.String,System.String,System.Double,System.Int32)">
+            <summary>
+            Tilbehørets konstruktør
+            Registrerer modellnr, navn, type, pris og id til produsent.
+            </summary>
+            <param name="mNr">Tilbehørets modellnr (int)</param>
+            <param name="navn">Tilbehørets navn</param>
+            <param name="type">Typebetegnelsen på tilbehør (eks: perrong, strømforsyning, etc)</param>
+            <param name="pris">Tilbehørets pris</param>
+            <param name="idProd">Produsentens ID</param>
+        </member>
+        <member name="M:modellTog.Tilbehor.getProdusent">
+            <summary>
+            Henter produsentens ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:modellTog.Tilbehor.setIdProd(System.Int32)">
+            <summary>
+            Setter produsentens ID
+            </summary>
+            <param name="idProd">Produsentens ID</param>
+        </member>
+        <member name="M:modellTog.Tilbehor.ToString">
+            <summary>
+            Skriver ut modellnr, navn, type og pris i den rekkefølgen
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:modellTog.Salgssted">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:modellTog.Salgssted.#ctor(System.Int32,System.String)">
+            <summary>
+            Konstruktør for salgssted
+            </summary>
+            <param name="idSted"></param>
+            <param name="salgssted"></param>
+        </member>
+        <member name="M:modellTog.Salgssted.getIdSted">
+            <summary>
+            Henter ID for salgsstedet
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Salgssted.getSalgssted">
+            <summary>
+            Henter navnet på salgsstedet
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Salgssted.setIdSted(System.Int32)">
+            <summary>
+            Setter ID til salgsstedet
+            Bør ikke forandres foruten ved sletting
+            </summary>
+            <param name="idSted">Salgsstedets ID</param>
+        </member>
+        <member name="M:modellTog.Salgssted.setSalgssted(System.String)">
+            <summary>
+            Setter navnet på salgsstedet
+            </summary>
+            <param name="salgssted">Navn på salgsstedet</param>
+        </member>
+        <member name="T:modellTog.Onskeliste">
+            <summary>
+            Sub-klasse som oppretter ønskeliste, her blir ønsker registrert.
+            Siden ønsker kan inneholde modeller som allerede er registrert, 
+            har ønsker derfor en ID som identifikator.
+            </summary>
+        </member>
+        <member name="M:modellTog.Onskeliste.#ctor(System.Int32,System.Int32,System.String,System.Double,System.Int32)">
+            <summary>
+            Konstruktør for oppretting av ønskeliste
+            Her registreres id, navn på modellen, pris på modellen og id til salgssted
+            hvor modellen selges
+            </summary>
+            <param name="id">Ønskets ID</param>
+            <param name="mNr">Ønsket modells modellnr</param>
+            <param name="navn">Navn på ønsket modell</param>
+            <param name="pris">Pris på ønsket modell</param>
+            <param name="idSted">ID til salgssted</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.getIdOnske">
+            <summary>
+            Henter ønskets ID
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Onskeliste.getMnr">
+            <summary>
+            Henter ønsket modells modellnr
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Onskeliste.getNavn">
+            <summary>
+            Henter ønsket modells navn
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:modellTog.Onskeliste.getPris">
+            <summary>
+            Henter ønsket modells pris
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:modellTog.Onskeliste.getIdSted">
+            <summary>
+            Henter ønsket modells salgssted
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:modellTog.Onskeliste.setIdOnske(System.Int32)">
+            <summary>
+            Setter ID til ønsket
+            </summary>
+            <param name="idOnske">ØnsketsID</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.setMnr(System.Int32)">
+            <summary>
+            Setter ønsket modells modellnr
+            </summary>
+            <param name="mNr">Modellnr</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.setNavn(System.String)">
+            <summary>
+            Setter navn på ønsket modell
+            </summary>
+            <param name="navn">Ønskets navn</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.setPris(System.Double)">
+            <summary>
+            Setter pris på ønsket modell
+            </summary>
+            <param name="pris">Ønskets pris</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.setSalgssted(System.Int32)">
+            <summary>
+            Setter salgsstedets ID
+            </summary>
+            <param name="idSted">ID til salgssted</param>
+        </member>
+        <member name="M:modellTog.Onskeliste.ToString">
+            <summary>
+            Skriver ut modellnr, navnet, typen, årsmodell, størrelse og pris i denne rekkefølgen
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="T:modellTog.Vogn">
+            <summary>
+            Samme egenskaper som sub-klassen Tog. Her registreres vogner, samme 
+            parametre som Tog-klassen, men i tillegg blir det her registrert
+            antallet vogner av en gitt type.
+            </summary>
+        </member>
+        <member name="M:modellTog.Vogn.#ctor(System.Int32,System.String,System.String,System.String,System.Double,System.Double,System.Int32,System.Int32)">
+            <summary>
+            Registrerer modellnr, navnet på vognen, typen, årsmodellen,
+            prisen på vognen, størrelsen på vognen, antall vogner av denne
+            typen/modellen og id på landet det kommer fra/tilhører
+            </summary>
+            <param name="mNr">Vognens modellnr (int)</param>
+            <param name="navn">Vognens navn</param>
+            <param name="type">Typebetegnelsen på vognen</param>
+            <param name="epoke">Vognens tidsepoke</param>
+            <param name="pris">Vognens pris</param>
+            <param name="strl">Vognens størrelse</param>
+            <param name="antall">Antall vogner av gitt modell</param>
+            <param name="idLand">ID til landet vognen kommer fra</param>
+        </member>
+        <member name="M:modellTog.Vogn.ToString">
+            <summary>
+            Skriver ut modellnr, navnet, typen, årsmodell, størrelse og pris i den rekkefølgen
+            </summary>
+            <returns>string</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.xml
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Release\MultiPurpose.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Release\MultiPurpose.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Release\MultiPurpose.dll
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Release\MultiPurpose.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.dll
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Release\MultiPurpose.xml

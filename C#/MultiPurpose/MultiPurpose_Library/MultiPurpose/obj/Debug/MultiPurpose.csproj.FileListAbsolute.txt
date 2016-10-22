@@ -1,0 +1,6 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Debug\MultiPurpose.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Debug\MultiPurpose.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\bin\Debug\MultiPurpose.xml
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Debug\MultiPurpose.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurpose_Library\MultiPurpose\obj\Debug\MultiPurpose.pdb

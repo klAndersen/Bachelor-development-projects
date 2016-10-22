@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MultiPurpose</name>
+    </assembly>
+    <members>
+        <member name="T:MultiPurpose.AutoGenerate">
+            <summary>
+            A class that auto-generates text. Made static to 
+            get direct contact with the functions.
+            </summary>
+        </member>
+        <member name="M:MultiPurpose.AutoGenerate.printNumericText(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Forwards the values, wether to be increased one-by-one 
+            or increased by a jump value
+            </summary>
+            <param name="text">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="jump">Increasement of number</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.AutoGenerate.printTextOnly(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns (end - start) number of lines.
+            Only 'text' is returned and generated X times.
+            </summary>
+            <param name="text">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.AutoGenerate.printNumericStartEnd(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Prints the starttext, the number (from start to end) and then the endText
+            Adds a newline at the end of each line
+            </summary>
+            <param name="startText">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="jump">Increasement of number</param>
+            <param name="endText">The text to be added at the end</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.AutoGenerate.printTextStartEnd(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Prints the startText and endText
+            Adds a newline at the end of each line
+            </summary>
+            <param name="startText">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="endText">The text to be added at the end</param>
+            <returns>string</returns>
+        </member>
+        <member name="T:MultiPurpose.ControlClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MultiPurpose.ControlClass.controlInstance">
+            <summary>
+            The variable to be used to send and retrieve data
+            from the ControlClass and other classes in the library
+            </summary>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.printTextOnly(System.String,System.Int32,System.Int32)">
+            <summary>
+            Returns (end - start) number of lines.
+            Only 'text' is returned and generated X times.
+            </summary>
+            <param name="text">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.printNumericText(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Forwards the values, wether to be increased one-by-one 
+            or increased by a jump value
+            </summary>
+            <param name="text">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="jump">Increasement of number</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.printNumericStartEnd(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Prints the starttext, the number (from start to end) and then the endText
+            Adds a newline at the end of each line
+            </summary>
+            <param name="startText">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="jump">Increasement of number</param>
+            <param name="endText">The text to be added at the end</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.printTextStartEnd(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Prints the startText and endText
+            Adds a newline at the end of each line
+            </summary>
+            <param name="startText">Text to be printed</param>
+            <param name="start">Startnumber</param>
+            <param name="end">End number</param>
+            <param name="endText">The text to be added at the end</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.saveReadMeToFile(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates and saves the added content to a textfile.
+            </summary>
+            <param name="filePath">The path where the ReadMe is to be saved</param>
+            <param name="title">The ReadMe's title</param>
+            <param name="vNo">The version number</param>
+            <param name="content">The ReadMe's content</param>
+            <param name="incAsteric">Is asteric to be added?</param>
+            <param name="overwrite">Is file to be overwritten (if exists)?</param>
+            <param name="addVersion">Is version number to be added?</param>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.returnReadMeExample">
+            <summary>
+            Creates an example text to display to the user
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.createStars">
+            <summary>
+            Returns a line of asterics (*)
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.connectToMySQL(System.String,System.String,System.String,System.String)">
+            <summary>
+            Opens a connection to the MySQL server
+            </summary>
+            <param name="user">The users username</param>
+            <param name="pwd">The users password</param>
+            <param name="port">The port to connect to</param>
+            <param name="server">The server to connect to</param>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.changeDatabase(System.String)">
+            <summary>
+            Connect to another database
+            </summary>
+            <param name="query">Query containing the change of database</param>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.returnListOfObjects(System.String)">
+            <summary>
+            Returns a List&lt;Objects&gt; containg the values from the query
+            </summary>
+            <param name="query">The query to be run</param>
+            <returns>List&lt;Objects&gt;</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.returnDataTable(System.String)">
+            <summary>
+            Returns a DataTable filled with the result from the 
+            query
+            </summary>
+            <param name="query">The query to be excecuted</param>
+            <returns>DataTable</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.getDatabaseStatus">
+            <summary>
+            Get the database status
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.setDataBaseStatus(System.String)">
+            <summary>
+            Set the status of database
+            </summary>
+            <param name="status">The status to be set</param>
+        </member>
+        <member name="M:MultiPurpose.ControlClass.disconnectMySQL">
+            <summary>
+            Closes the connection to the MySQL server
+            </summary>
+        </member>
+        <member name="M:MultiPurpose.CreateReadMe.saveToFile(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates and saves the added content to a textfile.
+            </summary>
+            <param name="filePath">The path where the ReadMe is to be saved</param>
+            <param name="title">The ReadMe's title</param>
+            <param name="vNo">The version number</param>
+            <param name="content">The ReadMe's content</param>
+            <param name="incAsteric">Is asteric to be added?</param>
+            <param name="overwrite">Is file to be overwritten (if exists)?</param>
+            <param name="addVersion">Is version number to be added?</param>
+        </member>
+        <member name="M:MultiPurpose.CreateReadMe.createStars">
+            <summary>
+            Creates a line of asterics (*)
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.CreateReadMe.createExample">
+            <summary>
+            Creates an example text to display to the user
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:MultiPurpose.Database.connectToDB(System.String,System.String,System.String,System.String)">
+            <summary>
+            Attempts to connect to a MySQL server with the given values
+            </summary>
+            <param name="server">The server to connect to</param>
+            <param name="port">The port to connect to</param>
+            <param name="user">The users username</param>
+            <param name="pwd">The users password</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:MultiPurpose.Database.closeConnection">
+            <summary>
+            Closes the connection to the database and logs out the user
+            </summary>
+        </member>
+        <member name="M:MultiPurpose.Database.changeDatabase(System.String)">
+            <summary>
+            Connect to another database
+            </summary>
+            <param name="query">Query containing the change of database</param>
+        </member>
+        <member name="M:MultiPurpose.Database.returnListOfObjects(System.String)">
+            <summary>
+            Returns a List&lt;Objects&gt; containg the values from the query
+            </summary>
+            <param name="query">The query to be run</param>
+            <returns>List&lt;Objects&gt;</returns>
+        </member>
+        <member name="M:MultiPurpose.Database.returnDataTable(System.String)">
+            <summary>
+            Returns a DataTable filled with the result from the 
+            query
+            </summary>
+            <param name="query">The query to be excecuted</param>
+            <returns>DataTable</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,30 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurposeEditor.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurposeEditor.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmDatabaseConnect.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmMenu.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.Properties.Resources.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.xml
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmCreateReadMe.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmGenerateText.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.exe
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmCreateReadMe.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmDatabaseConnect.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmGenerateText.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.frmMenu.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.Properties.Resources.resources
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.csproj.GenerateResource.Cache
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurposeEditor.exe.config
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurposeEditor.exe
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurposeEditor.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.dll
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.pdb
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\bin\Debug\MultiPurpose.xml
+D:\VS2010 Projects\C#\MultiPurpose\MultiPurposeEditor\obj\x86\Debug\MultiPurposeEditor.csprojResolveAssemblyReference.cache
