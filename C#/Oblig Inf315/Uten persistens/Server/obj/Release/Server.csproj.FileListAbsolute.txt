@@ -1,0 +1,10 @@
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Server\bin\Release\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Server\bin\Release\Server.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Server\obj\Release\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Server\obj\Release\Server.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Server\bin\Release\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Server\bin\Release\Server.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Server\obj\Release\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Server\obj\Release\Server.pdb

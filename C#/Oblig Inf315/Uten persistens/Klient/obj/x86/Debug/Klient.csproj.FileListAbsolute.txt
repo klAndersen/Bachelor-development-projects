@@ -1,0 +1,78 @@
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\bin\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\bin\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\bin\Debug\Server.dll
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Klient\bin\Debug\Server.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\bin\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\bin\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\bin\Debug\Server.dll
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\bin\Debug\Server.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\Uten persistens\Klient\obj\x86\Debug\Klient.Budskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\bin\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\bin\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\bin\Debug\Server.dll
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\bin\Debug\Db4objects.Db4o.dll
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\bin\Debug\Server.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.Budskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\case\db4o\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\bin\Debug\Klient.exe
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\bin\Debug\Klient.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\bin\Debug\Server.dll
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\bin\Debug\Server.pdb
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.Budskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\knuth\Documents\Eksamen\DB2_H11\Obligatorisk Persistens C#\Forslag\Uten persistens\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Budskjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\bin\Debug\Klient.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\bin\Debug\Klient.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\bin\Debug\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Oblig Inf315\Uten persistens\Klient\bin\Debug\Server.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\bin\Debug\Klient.exe
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\bin\Debug\Klient.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\bin\Debug\Server.dll
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\bin\Debug\Server.pdb
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Budskjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Menyskjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.Properties.Resources.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\Klient.SøkeSkjema.resources
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Lucas\Documents\Visual Studio 2010\Projects\C#\Inf 315 - Praktisk databaseadministrasjon\Oblig Inf315\Uten persistens\Klient\obj\x86\Debug\GenerateResource.write.1.tlog
