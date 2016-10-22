@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oblig4_knutlucasandersen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <!-- Tillatelser som applikasjonen krever for å kjøre -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Hovedaktivitet -->
+        <activity
+            android:name="com.example.oblig4_knutlucasandersen.OvervaakingActivity"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Sub-aktivitet som fremviser liste -->
+        <activity
+            android:name="com.example.oblig4_knutlucasandersen.OvervaakningsListeActivity"
+            android:parentActivityName="com.example.oblig4_knutlucasandersen.OvervaakingActivity"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig4_knutlucasandersen.OvervaakingActivity" />
+        </activity>
+        <!-- Sub-aktivitet som fremviser liste for å legge til nye målestasjoner -->
+        <activity
+            android:name="com.example.oblig4_knutlucasandersen.LeggTilMaalestasjonActivity"
+            android:parentActivityName="com.example.oblig4_knutlucasandersen.OvervaakingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig4_knutlucasandersen.OvervaakingActivity" />
+        </activity>
+        <!-- Sub-aktivitet som fremviser liste for å fjerne eksisterende målestasjoner -->
+        <activity
+            android:name="com.example.oblig4_knutlucasandersen.FjernMaalestasjonerActivity"
+            android:parentActivityName="com.example.oblig4_knutlucasandersen.OvervaakingActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig4_knutlucasandersen.OvervaakingActivity" />
+        </activity>
+        <!-- Service som skal laste ned værdata i bakgrunnen -->
+        <service android:name=".TemperaturService" />
+        <!-- BroadcastReceiver som mottar melding om at enhet er slått på -->
+        <receiver
+            android:name=".KringkastningsMottaker"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

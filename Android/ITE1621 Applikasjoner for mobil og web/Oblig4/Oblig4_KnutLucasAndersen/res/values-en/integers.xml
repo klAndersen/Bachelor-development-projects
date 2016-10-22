@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default value for upper/lower temperature limit -->
+    <!-- Default value upper temperature limit -->
+    <integer name="default_upper_value_temperature_limit">50</integer>
+    <!-- Default value lower temperature limit -->
+    <integer name="default_lower_value_temperature_limit">-50</integer>
+    
+    <!-- Default value for the time interval for downloading data -->
+    <integer name="default_time_interval_download">1</integer>
+</resources>

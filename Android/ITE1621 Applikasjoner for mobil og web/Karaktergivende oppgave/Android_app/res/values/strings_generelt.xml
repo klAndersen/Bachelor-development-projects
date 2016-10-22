@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Navn på applikasjon -->
+    <string name="app_name">TracknHide</string>
+
+    <!-- Navn på innstillingsactivity -->
+    <string name="activity_innstillinger">Innstillinger</string>
+
+    <!-- Navn på systemloggactivity -->
+    <string name="activity_systemlogg">Systemlogg</string>
+
+    <!-- Navn på visruteractivity -->
+    <string name="activity_visruter">Lagrede ruter</string>
+
+    <!-- ActionBar: Vis ruter alternativer -->
+    <string name="action_vis_ruter">Lagrede ruter</string>
+    <!-- Vis alle ruter -->
+    <string name="action_alle_ruter">Vis alle ruter</string>
+    <!-- Vis brukers ruter -->
+    <string name="action_egne_ruter">Vis egne ruter</string>
+    <!-- Vis andres ruter -->
+    <string name="action_andres_ruter">Vis andres ruter</string>
+    <!-- Fjern historikk ruter fra kartet -->
+    <string name="action_fjern_ruter">Fjern historikk fra kartet</string>
+
+    <!-- Navn på package til denne applikasjonen -->
+    <string name="package_name">dt.hin.android.kl_andersen</string>
+
+    <!-- Filnavn på systemlogg -->
+    <string name="filnavn">tracknhide_logg</string>
+
+    <!-- Knapp som vises på systemloggactivity for sletting av logg -->
+    <string name="btnSlettLogg">Slett logg</string>
+
+    <!-- Knapp som vises på visruteractivity for sletting av ruter -->
+    <string name="btnSlettRuter">Slett ruter</string>
+
+    <!-- Startet sending av egne posisjonsdata -->
+    <string name="startet_sending_av_posdata_melding">Startet utsending av posisjonsdata.</string>
+
+    <!-- Stoppet sending av egne posisjonsdata -->
+    <string name="stoppet_sending_av_posdata_melding">Stoppet utsending av posisjonsdata.</string>
+
+</resources>

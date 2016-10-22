@@ -1,0 +1,100 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Meny for å legge til/fjerne målestasjoner -->
+    <item
+        android:id="@+id/action_observation_station_menu"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_observation_station_menu">
+        <menu>
+
+            <!-- Legg til målestasjon -->
+            <item
+                android:id="@+id/action_add_observation_station"
+                android:icon="@drawable/action_add"
+                android:onClick="leggTilMaalestasjon"
+                android:title="@string/action_add_observation_station"/>
+            <!-- Fjern målestasjon -->
+            <item
+                android:id="@+id/action_remove_observation_station"
+                android:icon="@drawable/action_remove"
+                android:onClick="fjernMaalestasjon"
+                android:title="@string/action_remove_observation_station"/>
+        </menu>
+    </item>
+
+    <!-- Meny for start/stopp service -->
+    <item
+        android:id="@+id/action_service_menu"
+        android:icon="@drawable/action_service"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_service_menu">
+        <menu>
+
+            <!-- Start service -->
+            <item
+                android:id="@+id/action_start_service"
+                android:icon="@drawable/action_start"
+                android:onClick="startService"
+                android:title="@string/action_start_service"/>
+            <!-- Stopp service -->
+            <item
+                android:id="@+id/action_stop_service"
+                android:icon="@drawable/action_stop"
+                android:onClick="stopService"
+                android:title="@string/action_stop_service"/>
+        </menu>
+    </item>
+
+    <!-- Innstillinger -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/action_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_settings">
+        <menu>
+
+            <!-- Menyvalg: Sett intervall for nedlasting -->
+            <item
+                android:id="@+id/action_settings_interval"
+                android:icon="@drawable/action_time_interval"
+                android:title="@string/action_settings_interval">
+                <menu>
+
+                    <!-- Liste med radiobuttons for de forskjellige intervallene -->
+                    <group android:checkableBehavior="single" >
+                        <item
+                            android:id="@+id/action_settings_download_interval_1h"
+                            android:checked="true"
+                            android:title="@string/action_settings_download_interval_1h"/>
+                        <item
+                            android:id="@+id/action_settings_download_interval_2h"
+                            android:title="@string/action_settings_download_interval_2h"/>
+                        <item
+                            android:id="@+id/action_settings_download_interval_4h"
+                            android:title="@string/action_settings_download_interval_4h"/>
+                        <item
+                            android:id="@+id/action_settings_download_interval_8h"
+                            android:title="@string/action_settings_download_interval_8h"/>
+                        <item
+                            android:id="@+id/action_settings_download_interval_12h"
+                            android:title="@string/action_settings_download_interval_12h"/>
+                        <item
+                            android:id="@+id/action_settings_download_interval_24h"
+                            android:title="@string/action_settings_download_interval_24h"/>
+                    </group>
+                </menu>
+            </item>
+            <!-- Sett øvre temperaturgrense -->
+            <item
+                android:id="@+id/action_settings_upper_temperature"
+                android:onClick="settOvreTemperaturGrense"
+                android:title="@string/action_settings_upper_temperature"/>
+            <!-- Sett nedre temperaturgrense -->
+            <item
+                android:id="@+id/action_settings_lower_temperature"
+                android:onClick="settNedreTemperaturGrense"
+                android:title="@string/action_settings_lower_temperature"/>
+        </menu>
+    </item>
+
+</menu>

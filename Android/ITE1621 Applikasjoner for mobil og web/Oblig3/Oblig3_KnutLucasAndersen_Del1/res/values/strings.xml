@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default verdier -->
+    <string name="app_name">Oblig3 Innstilling Logger</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Innstillinger -->
+    <string name="chktvVelgAlle">Velg alle</string>
+    <string name="btnLagre">Lagre endringer</string>
+
+    <!-- Filbehandling -->
+    <string name="filnavn">KategoriLogging</string>
+    <string name="tomFil">Ingen kategorier registrert</string>
+
+    <!-- Kategoribehandling -->
+    <string name="phone_state">android.intent.action.PHONE_STATE</string>
+    <string name="utgaaende_anrop">android.intent.action.NEW_OUTGOING_CALL</string>
+    <string name="gps_status">android.location.GPS_ENABLED_CHANGE</string>
+    <string name="gps_intent_enabled">enabled</string>
+    <string name="wifi_endret1">android.net.wifi.STATE_CHANGE</string>
+    <string name="wifi_endret2">android.net.wifi.WIFI_STATE_CHANGED</string>
+    <string name="sms_mottatt">android.provider.Telephony.SMS_RECEIVED</string>
+
+    <!-- Array som inneholder de forskjellige loggingskategoriene -->
+    <string-array name="array_kategorier">
+        <item>Telefoni</item>
+        <item>Nettverk</item>
+        <item>Posisjonering</item>
+        <item>SMS</item>
+    </string-array>
+
+</resources>

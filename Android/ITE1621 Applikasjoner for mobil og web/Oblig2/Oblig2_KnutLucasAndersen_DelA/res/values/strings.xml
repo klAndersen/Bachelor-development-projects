@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default verdier -->
+    <string name="app_name">Oblig2 - Bokprogram</string>
+    <string name="app_bokliste">Oblig2 - Bokliste</string>
+    <string name="app_nyTittel">Oblig2 - Registrer ny boktittel</string>
+    <string name="app_slettTittel">Oblig2 - Slett titler</string>
+    <string name="action_settings">Innstillinger</string>
+
+    <!-- Filnavn og filbehandling -->
+    <string name="filnavn">bokinformasjon</string>
+    <string name="tomFil">Ingen titler registrert</string>
+
+    <!-- TextView & CheckedTextView -->
+    <string name="tvOppgiBoktittel">Skriv inn bokens tittel:</string>
+    <string name="chktvVelgAlle">Velg alle</string>
+
+    <!-- EditText -->
+    <string name="hintBoktittel">Bokens tittel&#8230;</string>
+
+    <!-- Buttons -->
+    <string name="btnVisListe">Vis eksisterende titler</string>
+    <string name="btnRegistrerNyBok">Registrer ny tittel</string>
+    <string name="btnSlettBok">Slett selekterte titler</string>
+
+    <!-- Pakke - og aktivitetsnavn -->
+    <string name="delA_package_name">com.example.oblig2A_knutlucasandersen</string>
+    <string name="delB_package_name">com.example.oblig2B_knutlucasandersen</string>
+    <string name="activity_vis_tittel_liste">.BOKLISTE_ACTIVITY</string>
+    <string name="activity_ny_tittel">.REGISTRER_NY_BOK_ACTIVITY</string>
+
+</resources>

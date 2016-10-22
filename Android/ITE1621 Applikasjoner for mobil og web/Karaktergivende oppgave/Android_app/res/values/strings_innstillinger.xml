@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Aktivitet som skal fanges opp av broadcastreceiver -->
+    <string name="intent_innstillinger_endret">.INSTILLINGER_ACTIVITY</string>
+
+    <!-- Spinner: Default tekst for fargevalg -->
+    <string name="default_spinner">Default</string>
+    <!-- Default tekst for navn på egen enhet -->
+    <string name="default_enhet_navn">Min enhet</string>
+
+    <!-- String-array som inneholder farger for brukers rute -->
+    <string-array name="spinner_farge_array">
+        <item><font fgcolor="#ff008000">Grønn</font></item>
+        <item><font fgcolor="#ffFFFF00">Gul</font></item>
+        <item><font fgcolor="#ff0000FF">Blå</font></item>
+        <item><font fgcolor="#ffFF0000">Rød</font></item>
+        <item><font fgcolor="#ff800080">Lilla</font></item>
+        <item><font fgcolor="#ffffffff">Svart</font></item>
+        <item><font fgcolor="#ff808080">Grå</font></item>
+    </string-array>
+
+    <!-- GUI-baserte kontroller som vises på InnstillingsActivity -->
+    <!-- TextView: Fremviser hvor ofte (i minutt) hver oppdatering sendes -->
+    <string name="tvInputMinutt">&#160;minutt</string>
+    <!-- TextView: Fremviser hvor ofte (i meter) hver oppdatering sendes -->
+    <string name="tvInputMeter">&#160;meter</string>
+    <!-- TextView: Tekst som spør bruker etter hvor ofte posisjonsdata skal sendes (tidsbasert: minutter) -->
+    <string name="tvMinuttOppdatering">Posisjonsdata blir sendt hver (klikk verdien for å endre):</string>
+    <!-- TextView: Tekst som spør bruker etter hvor ofte posisjonsdata skal sendes (forflytning: meter) -->
+    <string name="tvMeterOppdatering">Posisjonsdata blir sendt hver (klikk verdien for å endre):</string>
+    <!-- TextView: Setting av farge for brukers rute -->
+    <string name="tvVisFarge">Sett farge for min forflytning</string>
+    <!-- TextView: Setting av default zoom -->
+    <string name="tvSettZoom">Sett default zoom \n(lav verdi zoomer ut, høy verdi zoomer inn)</string>
+    <!-- TextView: Ledetekst for navngivning av enhet -->
+    <string name="tvNavngiEnhet">Navngi min enhet på kartet (klikk navnet for å endre)</string>
+    <!-- TextView: Tekst som spør bruker hva enhet skal kalles -->
+    <string name="tvNavn">Navn:\t</string>
+    <!-- TextView: Spør bruker om posisjonsdata skal mottas etter applikasjon avsluttes -->
+    <string name="tvMottaPosisjonsdata">Vil du fortsette å motta andres posisjonsdata \netter applikasjonen avsluttes?</string>
+    <!-- TextView: Lagring av brukes posisjon -->
+    <string name="tvLagreMinePosisjonsdata">Lagre egne ruter?</string>
+    <!-- TextView: Lagring av andres posisjon -->
+    <string name="tvLagreAndresPosisjonsdata">Lagre andres ruter posisjon?</string>
+    <!--  -->
+    <string name="tvVisNotifications">Skal tilkoblingsmeldinger vises \nved oppstart og avslutning?\n(feilmeldinger vil fortsatt vises)</string>
+    <!-- TextView: Skal hendelser og feilmeldinger logges? -->
+    <string name="tvLoggMeldinger">Logge hendelser og feilmeldinger?</string>
+
+</resources>

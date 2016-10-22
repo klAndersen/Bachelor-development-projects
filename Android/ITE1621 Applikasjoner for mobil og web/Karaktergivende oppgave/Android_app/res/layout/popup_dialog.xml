@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnVisAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_button_border"
+        android:onClick="onClickVisAdresse"
+        android:text="@string/btnVisAdresse" />
+
+    <Button
+        android:id="@+id/btnEndreVisning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_button_border"
+        android:onClick="onClickEndreVisning"
+        android:text="@string/btnEndreVisning_1" />
+
+    <Button
+        android:id="@+id/btnFinnMinLokasjon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_button_border"
+        android:onClick="onClickFinnMinLokasjon"
+        android:text="@string/btnFinnMinLokasjon" />
+
+    <Button
+        android:id="@+id/btnVisOnlineBrukere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_button_border"
+        android:onClick="onClickVisOnlineBrukere"
+        android:text="@string/btnVisOnlineBrukere" />
+
+    <Button
+        android:id="@+id/btnAvbryt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_button_border"
+        android:onClick="onClickAvbryt"
+        android:text="@string/btnAvbryt" />
+
+</LinearLayout>

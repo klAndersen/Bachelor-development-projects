@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Hovedinnstillinger (header, tittel, etc.) -->
+    <string name="app_name">Konverteringsapplikasjon</string>
+    <string name="menu_settings">Innstillinger</string>
+    <string name="choose_value">-Velg en konverteringsverdi-</string>
+	<string name="convert_from">Konverter fra:</string>
+    <string name="convert_to">Konverter til:</string>
+    <string name="input_value">Skriv inn verdi som skal konverteres:</string>
+    <string name="hintInput">Konverteringsverdi her&#8230;</string>
+    <string name="btnCalculate">Konverter</string>
+    <string name="tvResult">Den konverterte verdien er:</string>
+    <string name="no_value_entered">Vennligst skriv inn en verdi i tekstfeltet.</string>
+    
+    <!-- Tilgjengelige konverteringer -->
+	<string-array name="conversions_array">
+        <item>Areal</item>
+        <item>Avstand</item>
+        <item>Masse</item>
+        <item>Temperatur</item>
+        <item>Tid</item>
+        <item>Volum</item>
+    </string-array>
+    
+    <!-- Arealrelaterte variabler -->
+    <string-array name="area_array">
+        <item>squaremillimeters</item>
+        <item>squarecentimeters</item>
+        <item>squarefeet</item>
+        <item>squareinches</item>
+        <item>squareyards</item>
+    </string-array>
+    
+    <!-- Avstandsrelaterte variabler -->
+    <string-array name="distance_array">
+        <item>angstrom</item>
+        <item>mikroner</item>
+        <item>millimeter</item>
+        <item>centimeter</item>
+        <item>decimeter</item>
+        <item>meter</item>
+        <item>kilometer</item>
+        <item>tommer</item>
+        <item>fot</item>
+    </string-array>    
+    
+    <!-- Masserelaterte variabler -->    
+    <string-array name="mass_array">
+        <item>mikrogram</item>
+        <item>milligram</item>
+        <item>centigram</item>
+        <item>decigram</item>
+        <item>gram</item>
+        <item>kilogram</item>
+        <item>unse (ounce)</item> <!-- Tilsvarer 28,35 gram jfr. ordbok -->
+        <item>pund</item> <!-- Tilsvarer 435 gram jfr. ordbok -->
+    </string-array>
+    
+    <!-- Temperaturrelaterte variabler -->
+    <string-array name="temperature_array">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+        <item>kelvin</item>
+    </string-array>
+    
+    <!-- Tidsrelaterte variabler -->
+    <string-array name="time_array">
+        <item>millisekunder</item>
+        <item>sekunder</item>
+        <item>minutter</item>
+        <item>timer</item>
+        <item>dager</item>
+        <item>uker</item>
+        <item>måneder</item>
+        <item>år</item>
+        <item>tiår</item>
+        <item>århundrer</item>
+    </string-array>
+    
+    <!-- Volumrelaterte variabler -->
+    <string-array name="volume_array">
+        <item>kubikkmillimeter</item>
+        <item>kubikkcentimeter</item>
+        <item>kubikkdecimeter</item>
+        <item>kubikkkilometer</item>
+        <item>kubikktommer</item>
+        <item>kubikkfot</item>
+        <item>cubicyards</item>
+        <item>milliliter</item>
+        <item>centiliter</item>
+        <item>deciliter</item>
+        <item>liter</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    Disse feilmeldingene er ren copy/paste fra android-sdk gcm-samples-client 
+    siden feilmeldingenes beskrivelse er i min mening god nok. Det eneste jeg har 
+    gjort med de er at jeg har oversatt de til norsk og fjernet error_config, 
+    siden det var en feilmelding som kommer hvis SERVER_URL og/eller SENDER_ID
+    ikke var satt.
+    -->
+
+    <string name="already_registered">Enhet er allerede registrert på GCM server.</string>
+    <string name="gcm_registered">Enhet ble registrert på GCM server.</string>
+    <string name="gcm_unregistered">Enhet ble avregistrert fra GCM server!</string>
+    <string name="gcm_message">Melding fra GCM:\n</string>
+    <string name="gcm_error">Feilmelding fra GCM: (%1$s).</string>
+    <string name="gcm_recoverable_error">Feilmelding fra GCM: Gjenopprettbar feil (%1$s).</string>
+    <string name="gcm_deleted">GCM server slettet %1$d meldinger!</string>
+    <string name="server_registering">Prøver (forsøk nr. %1$d/%2$d) å registrere enhet på TracknHide server.</string>
+    <string name="server_registered">Enhet ble lagt til på TracknHide server!</string>
+    <string name="server_unregistered">Enhet ble fjernet fra TracknHide server!</string>
+    <string name="server_register_error">Kunne ikke registrere enhet på TracknHide server etter %1$d forsøk.</string>
+    <string name="server_unregister_error">Kunne ikke avregistrere enhet fra TracknHide server (%1$s).</string>
+
+    <!-- Parametre jeg har lagt til, men som "hører til" GCM -->
+
+    <string name="display_message">dt.hin.android.kl_andersen.VIS_MELDING</string>
+    <string name="readable_message">message</string>
+    <string name="sender_id">379717811198</string>
+    <string name="action_send_posisjon">Send mine posisjonsdata</string>
+    <string name="action_stopp_send_posisjon">Stopp sending av mine posisjonsdata</string>
+
+</resources>

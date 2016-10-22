@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application name: -->
+    <string name="app_name">Temperature Surveillance</string>
+
+    <!-- Fragment Activity titles -->
+    <!-- Title for fragment: List of observation station names and temperatures -->
+    <string name="display_observation_stations_values">Observation Stations</string>
+    <!-- Title for fragment: List of links to yr.no's sites -->
+    <string name="display_original_site_links">Links to yr.no</string>
+
+    <!-- Strings related to the ActionBar -->
+    <!-- Sub-menu to start/stop service -->
+    <string name="action_service_menu">Service</string>
+    <!-- Name for action: Start service -->
+    <string name="action_start_service">Start service</string>
+    <!-- Name for action: Stop service -->
+    <string name="action_stop_service">Stop service</string>
+    <!-- Sub-menu for adding/removing observation stations -->
+    <string name="action_observation_station_menu">Observation Stations</string>
+    <!-- Name for action: Add observation stations -->
+    <string name="action_add_observation_station">Add observation stations</string>
+    <!-- Name for action: Remove observation stations -->
+    <string name="action_remove_observation_station">Remove observation stations</string>
+    <!-- Name for action: settings -->
+    <string name="action_settings">Settings</string>
+
+    <!-- The different options Settings include -->
+    <!-- Option for setting the interval for download/update -->
+    <string name="action_settings_interval">Set interval for updates</string>
+    <!-- Option for upper limit temperature -->
+    <string name="action_settings_upper_temperature">Set upper temperature limit</string>
+    <!-- Option for lower limit temperature -->
+    <string name="action_settings_lower_temperature">Set lower temperature limit</string>
+
+    <!-- The different sub-options for setting the update interval -->
+
+    <string name="action_settings_download_interval_1h">1. hour</string>
+    <string name="action_settings_download_interval_2h">2. hour</string>
+    <string name="action_settings_download_interval_4h">4. hour</string>
+    <string name="action_settings_download_interval_8h">8. hour</string>
+    <string name="action_settings_download_interval_12h">12. hour</string>
+    <string name="action_settings_download_interval_24h">24. hour</string>
+
+    <!-- InputDialog: text for upper/lower temperature limit -->
+    <!-- Title: Upper temperature limit (input) -->
+    <string name="inputdialog_title_upper_temperature">Upper temperature limit</string>
+    <!-- InputDialog text for upper temperature limit -->
+    <string name="inputdialog_upper_temperature">Enter the upper temperature limit for surveillance \n(This must be higher then the limit set for lower)</string>
+    <!-- Title: Lower temperature limit (input) -->
+    <string name="inputdialog_title_lower_temperature">Lower temperature limit</string>
+    <!-- InputDialog text for lower temperature limit -->
+    <string name="inputdialog_lower_temperature">Enter the lower temperature limit for surveillance \n(This must be lower then the limit set for upper)</string>
+
+    <!-- Strings displayed on the Activity -->
+    <!-- Button text for displaying list over selected observation stations -->
+    <string name="btnDisplayTemperatureList">Show temperatures from selected observation stations</string>
+    <!-- Button text for displaying list over links to yr.no's sites from which the xml-files are retrieved -->
+    <string name="btnDisplayLinks">Links to original content</string>
+    <!-- Required text to display to be able to use data from yr.no: http://om.yr.no/verdata/vilkar/ -->
+    <string name="tvRequiredText">Observation stations and temperatures are retrieved from yr.no. \nWeather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK</string>
+
+    <!-- Notification messages -->
+    <!-- Notfication text: Upper temperature limit changed -->
+    <string name="notification_upper_limit">A higher temperature then set limit has been registered:</string>
+    <!-- Notfication text: Lower temperature limit changed -->
+    <string name="notification_lower_limit">A lower temperature then set limit has been registered:</string>
+    <!-- Notification text: A new temperature limit is set -->
+    <string name="new_temp_limit_set">The temperature limit was registered successfully.</string>
+    <!-- Notfication text: A new interval for download is set -->
+    <string name="new_time_interval_set">New timeinterval is set. \nNext download is scheduled to: </string>
+    <!-- Notification text: Service is stopped (displayed in onDestroy()) -->
+    <string name="service_on_destroy">Service is stopping. \nNote! No download will happen until service is started up again.</string>
+
+    <!-- Filename containing the users selected observation stations -->
+    <string name="filename_saved_stations">SelectedObservationStations</string>
+    <!-- Filename containing the last downloaded temperatures -->
+    <string name="filename_saved_temperatures">SavedTemperatures</string>
+    <!-- Filename containing the list of all the places to observe -->
+    <string name="filename_view_of_places">places_to_observe</string>
+
+    <!-- Components displayed on LeggTilMaalestasjonActivity -->
+    <!-- Checkbox -->
+    <string name="chktvChooseAll">Choose All</string>
+    <!-- Button Save text -->
+    <string name="btnSave">Save ObservationStations</string>
+    <!-- Button Delete text -->
+    <string name="btnDelete">Delete selected ObservationStations</string>
+    
+    <!-- Error messages -->
+    <!-- Unknown error occured -->
+    <string name="uknown_error_exception">An unknown error occurred. The error was:\n</string>
+    <!-- Error occured while attempting to read from file -->
+    <string name="read_from_file_exception">Error occurred while attempting to read from file. The error was:\n</string>
+    <!-- Error occured while attempting to write to file -->
+    <string name="write_to_file_exception">Error occurred while attempting to write to file. The error was:\n</string>
+    <!-- The value entered is not a numeric value -->
+    <string name="number_format_exception">Invalid input. Please enter a numeric value (0 &#8211; 9).</string>
+    <!-- Error during attempt to connect/download from internet -->
+    <string name="no_internet_connection_found">No active internet connection found. \nCan\'t download data, are you connected to internet?</string>
+
+</resources>

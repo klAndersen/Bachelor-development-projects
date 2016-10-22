@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Exceptions -->
+    
+    <!-- Exception: Ukjent feil oppsto -->
+    <string name="unknown_error_exception">En ukjent feil oppsto. Feilen som oppsto var:\n</string>
+    <!-- Exception: Kunne ikke hente meldinger (BroadcastReceiver) -->
+    <string name="exception_bcr_messages">En feil oppsto under henting av melding:\n</string>
+    <!-- Exception: Feil oppsto under lesing fra fil -->
+    <string name="read_from_file_exception">Feil oppsto under lesing: \n</string>
+    <!-- Exception: Feil oppsto under skriving til fil -->
+    <string name="write_to_file_exception">Feil oppsto under skriving: \n</string>
+
+    <!-- NumberFormatException -->
+    
+    <!-- NumberFormatException: Verdi innskrevet er ikke tallverdi (numerisk) -->
+    <string name="number_format_exception">Ugyldig input. Gyldig verdi er tallverdi/siffer (0 &#8211; 9). \n</string>
+    <!-- NumberFormatException: Feil under parsing av data mottatt fra server -->
+    <string name="number_format_exception2">Kunne ikke konvertere mottatte posisjonsdata fra server:\n</string>
+
+    <!-- RuntimeException: Kunne ikke starte/opprette aktivitet -->
+    <string name="runtime_error_exception">Problem oppsto under oppretting av aktiviteten.\n</string>
+
+    <!-- NullPointerException: -->
+    <string name="nullpointer_error_exception">Et problem oppsto under oppretting av verdier.\nEn eller flere opprette variabler har ikke verdi!</string>
+    
+    <!-- IOException: Feil under tilkobling til internett, - henting av adresser -->
+    <string name="ioexception_adress_error">En feil oppsto ved henting av adresse:\n</string>
+
+    <!-- IllegalArgumentException: Ingen provider tilgjengelig -->
+    <string name="illegal_argument_exception">Ingen tilbyder for lokasjonsdata tilgjengelig.\nEr GPS slått på?</string>
+
+    <!-- SQLiteException: Feil under uthenting/innlegging av data -->
+    <string name="sqlite_exception">Kunne ikke fullføre database oppgave. \nFeilen som oppsto var:\n</string>
+
+    <!-- ParseException: Kunne ikke formatere string til dato -->
+    <string name="parse_date_exception">Kunne ikke konvertere verdi til dato:\n</string>
+
+    <!-- Ikke tilkoblet til internett -->
+    <string name="no_internet_connection_found">Kunne ikke laste ned kart.\nEr du tilkoblet til internett?</string>
+
+</resources>

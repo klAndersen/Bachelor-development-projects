@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Layout for navngivning av egen enhet -->
+
+    <TextView
+        android:id="@+id/tvNavngiEnhet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvNavngiEnhet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvNavn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tvNavn" />
+
+        <TextView
+            android:id="@+id/tvMinEnhetsnavn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="endreMinEnhetsNavn"
+            android:text="@string/default_enhet_navn"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+    
+
+    <!-- Oppdatering av posisjonsdata i minutt -->
+
+    <TextView
+        android:id="@+id/tvMinuttOppdatering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvMinuttOppdatering" />
+
+    <TextView
+        android:id="@+id/tvInputMinutt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="endrePosisjonsoppdateringMinutt"
+        android:text="@string/tvInputMinutt"
+        android:textStyle="bold" />
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+
+    <!-- Oppdatering av posisjonsdata i meter -->
+
+    <TextView
+        android:id="@+id/tvMeterOppdatering"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tvMeterOppdatering" />
+
+    <TextView
+        android:id="@+id/tvInputMeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="endrePosisjonsoppdateringMeter"
+        android:text="@string/tvInputMeter"
+        android:textStyle="bold" />
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+
+    <!-- Layout for hvilken farge bruker ønsker sin rute skal ha på kartet -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvVisFarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvVisFarge" />
+
+        <Spinner
+            android:id="@+id/spinnerFarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:entries="@array/spinner_farge_array"
+            android:prompt="@string/default_spinner" />
+    </RelativeLayout>
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+
+    <!-- Layout for default zoom på kartet -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSettZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvSettZoom" />
+
+        <Spinner
+            android:id="@+id/spinnerZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:prompt="@string/default_spinner" />
+    </RelativeLayout>
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+    <!-- Layout for om posisjonsdata skal mottas etter applikasjon avsluttes -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvMottaPosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvMottaPosisjonsdata" />
+
+        <CheckBox
+            android:id="@+id/chkMottaPosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lagreMottakAvPosisjonsdata" />
+    </RelativeLayout>
+
+    <!-- Luft -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </View>
+
+    <!-- Layout for å lagre posisjonsdata lokalt -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvLagreMinePosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvLagreMinePosisjonsdata" />
+
+        <CheckBox
+            android:id="@+id/chkLagreMinePosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lagreMinPosisjon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvLagreAndresPosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvLagreAndresPosisjonsdata" />
+
+        <CheckBox
+            android:id="@+id/chkLagreAndresPosisjonsdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lagreAndresPosisjon" />
+    </RelativeLayout>
+
+    <!-- Layout for å lagre systemlogg (meldinger, feil, o.l.) -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvLoggMeldinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvLoggMeldinger" />
+
+        <CheckBox
+            android:id="@+id/chkLoggMeldinger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lagreValgLoggingAvMeldinger" />
+    </RelativeLayout>
+
+    <!--
+    Layout for om tilkoblingsmeldinger skal vises ved 
+    oppstart og avslutning
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvVisNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tvVisNotifications" />
+
+        <CheckBox
+            android:id="@+id/chkVisNotifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="lagreValgVisningAvNotifications" />
+    </RelativeLayout>
+
+</LinearLayout>

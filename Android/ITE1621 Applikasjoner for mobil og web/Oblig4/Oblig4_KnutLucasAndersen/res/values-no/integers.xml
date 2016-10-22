@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default verdi for øvre/nedre temperaturgrense -->
+    <!-- Default verdi for øvre temperaturgrense -->
+    <integer name="default_upper_value_temperature_limit">50</integer>
+    <!-- Default verdi for nedre temperaturgrense -->
+    <integer name="default_lower_value_temperature_limit">-50</integer>
+
+    <!-- Default verdi for tidspunkt tilknyttet nedlasting av værdata -->
+    <integer name="default_time_interval_download">1</integer></resources>

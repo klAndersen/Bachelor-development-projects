@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <CheckedTextView
+        android:id="@+id/chktvChooseAll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:checkMark="?android:attr/textCheckMark"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="avhukAlleTitler"
+        android:orientation="horizontal"
+        android:text="@string/chktvChooseAll" />
+
+    <ListView
+        android:id="@+id/lvChooseObservationStations"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btnSave"
+        android:layout_below="@id/chktvChooseAll"
+        android:choiceMode="multipleChoice"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="lagreEndringer"
+        android:text="@string/btnSave" />
+    
+</RelativeLayout>

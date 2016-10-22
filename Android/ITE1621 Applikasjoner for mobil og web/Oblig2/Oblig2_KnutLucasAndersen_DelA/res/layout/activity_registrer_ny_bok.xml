@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrerNyBokActivity">
+    
+    <TextView 
+        android:id="@+id/tvOppgiBoktittel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/tvOppgiBoktittel" />
+    
+    <EditText
+        android:id="@+id/inputBoktittel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvOppgiBoktittel"
+        android:ems="10" 
+        android:hint="@string/hintBoktittel" />
+    
+    <Button
+        android:id="@+id/btnRegistrerNyTittel"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/inputBoktittel"
+        android:text="@string/btnRegistrerNyBok" 
+        android:onClick="registrerNyTittel" />
+
+</RelativeLayout>

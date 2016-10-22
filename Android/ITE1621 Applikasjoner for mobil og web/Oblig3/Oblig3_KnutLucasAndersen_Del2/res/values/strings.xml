@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default verdier -->
+    <string name="app_name">Oblig3 LoggerUI</string>
+    <string name="action_settings">Settings</string>
+    <string name="resultatSkjerm">Systemlogg</string>
+    <string name="tvResultat">Ingen hendelser er loggført.</string>
+
+    <!-- String verdier for tabellene i databasen -->
+    <!-- Gjorde det på denne måten siden jeg ikke fikk importert klassen LoggingContentProvider fra del1 -->
+
+    <string name="URI_STRING">content://com.example.systemlogging</string>
+    <string name="LOGG_ID">logg_id</string>
+    <string name="LOGG_DATO">logg_dato</string>
+    <string name="LOGG_TIDSPUNKT">logg_tidspunkt</string>
+    <string name="LOGG_KATEGORI">logg_kategori</string>
+    <string name="LOGG_TEKST">logg_tekst</string>
+    <string name="LOGG_DETALJER">logg_detaljer</string>
+
+    <!-- OBS! Denne må oppdateres dersom string-array i del1 oppdateres/endres. -->
+    <!-- Array som inneholder de forskjellige loggingskategoriene -->
+    <string-array name="array_kategorier">
+        <item>Telefoni</item>
+        <item>Nettverk</item>
+        <item>Posisjonering</item>
+        <item>SMS</item>
+    </string-array>
+
+</resources>

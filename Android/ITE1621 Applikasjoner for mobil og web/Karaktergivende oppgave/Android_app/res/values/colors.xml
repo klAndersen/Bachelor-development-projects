@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alert_dialog_background">#272627</color>
+    <color name="alert_dialog_border">#E0DDE0</color>
+
+    <string-array name="rute_farger_array">
+
+        <!-- grønn -->
+        <item>#ff008000</item>
+        <!-- gul -->
+        <item>#ffFFFF00</item>
+        <!-- blå -->
+        <item>#ff0000FF</item>
+        <!-- rød -->
+        <item>#ffFF0000</item>
+        <!-- lilla -->
+        <item>#ff800080</item>
+        <!-- svart -->
+        <item>#ff000000</item>
+        <!-- grå -->
+        <item>#ff808080</item>
+    </string-array>
+
+</resources>

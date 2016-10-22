@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dt.hin.android.kl_andersen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <!-- Krav om tilgang til å sjekke om nettverk er oppe ved oppstart av applikasjon -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Krav om internett tilgang siden kart lastes ned herfra -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Tilgang til brukers posisjon for å vise lokasjon på kart -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- GCM krever en Google konto -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Unngå at enhet går i hvilemodus mens meldinger/hendelser mottas -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Tilgang til å registrere at enhet er slått på -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!--
+    Egendefinert tillatelse som gjør at applikasjonen kan motta meldinger fra GCM.
+    Her må pakkenavnet til applikasjonen være med!
+    Eksempel: PACKAGE.permission.C2D_MESSAGE.
+    -->
+    <permission
+        android:name="dt.hin.android.kl_andersen.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="dt.hin.android.kl_andersen.permission.C2D_MESSAGE" />
+    <!-- Denne applikasjonen har tillatelse til å registrere og motta meldinger -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+         >
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="dt.hin.android.kl_andersen.MainMapActivity"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sub-aktivitet som fremviser systemlogg og mulighet for å slette denne -->
+        <activity
+            android:name="dt.hin.android.kl_andersen.SystemloggActivity"
+            android:label="@string/activity_systemlogg" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dt.hin.android.kl_andersen.MainMapActivity" />
+        </activity>
+
+        <!-- Sub-aktivitet som fremviser lagrede ruter -->
+        <activity
+            android:name="dt.hin.android.kl_andersen.VisRuterActivity"
+            android:label="@string/activity_visruter" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dt.hin.android.kl_andersen.MainMapActivity" />
+        </activity>
+
+        <!-- Sub-aktivitet som fremviser innstillinger -->
+        <activity
+            android:name="dt.hin.android.kl_andersen.InnstillingsActivity"
+            android:label="@string/activity_innstillinger" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dt.hin.android.kl_andersen.MainMapActivity" />
+        </activity>
+        <!-- ContentProvider -->
+        <provider
+            android:name="dt.hin.android.kl_andersen.LoggingContentProvider"
+            android:authorities="dt.android.rutelogging"
+            android:exported="false" />
+        <!-- BroadcastReceiver som mottar applikasjonshendelser og - meldinger -->
+        <receiver
+            android:name=".KringkastningsMottaker"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="dt.hin.android.kl_andersen.INSTILLINGER_ACTIVITY" />
+                <action android:name="dt.hin.android.kl_andersen.VIS_MELDING" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!--
+        Kringkastningsmottaker som mottar intents fra GCM services og sender det til IntentService for behandling.
+        En må ha tillatelsen com.google.android.c2dm.permission.SEND slik at kun GCM service kan sende meldinger for applikasjonen.
+        -->
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Mottar meldingene -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Mottar registrationID -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- Kategori -->
+                <category android:name="dt.hin.android.kl_andersen" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+        Applikasjonsspesifikk sub-klasse av GCMBaseIntentService som håndterer mottak av meldinger.
+        Service må navngis som .GCMIntentService, såfremt ikke applikasjon bruker en egendefinert 
+        BroadcastReceiver som redefinerer navnet.
+        -->
+        <service android:name=".GCMIntentService" />
+    </application>
+
+</manifest>

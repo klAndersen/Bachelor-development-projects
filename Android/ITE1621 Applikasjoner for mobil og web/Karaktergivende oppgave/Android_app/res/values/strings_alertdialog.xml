@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AlertDialog: Inputboks tittel for nytt enhetsnavn -->
+    <string name="inputboks_enhetsnavn_tittel">Nytt enhetsnavn</string>
+    <!-- AlertDialog: Inputboks melding for nytt enhetsnavn -->
+    <string name="inputboks_enhetsnavn_melding">Oppgi ønsket navn på egen enhet</string>
+    <!-- AlertDialog: Inputboks - Positiv knappetekst for nytt enhetsnavn -->
+    <string name="inputboks_enhetsnavn_posButton">Sett nytt navn</string>
+
+    <!-- AlertDialog: Inputboks tittel for endring av oppdatering (minutt) -->
+    <string name="inputboks_minutt_oppdatering_tittel">Oppdatering pr minutt</string>
+    <!-- AlertDialog: Inputboks melding for endring av oppdatering (minutt) -->
+    <string name="inputboks_minutt_oppdatering_melding">Oppgi hvor ofte (i minutt) dine posisjonsdata skal sendes \n(siffer 0 &#8211; 9, desimaltall adskilles med punktum)</string>
+    <!-- AlertDialog: Inputboks - Positiv knappetekst for endring av oppdatering (minutt) -->
+    <string name="inputboks_minutt_oppdatering_posButton">Lagre tidsintervall</string>
+
+    <!-- AlertDialog: Inputboks tittel for endring av oppdatering (meter) -->
+    <string name="inputboks_meter_oppdatering_tittel">Oppdatering pr meter</string>
+    <!-- AlertDialog: Inputboks melding for endring av oppdatering (meter) -->
+    <string name="inputboks_meter_oppdatering_melding">Oppgi hvor ofte (i meter) dine posisjonsdata skal sendes \n(siffer 0 &#8211; 9, desimaltall adskilles med punktum)</string>
+    <!-- AlertDialog: Inputboks - Positiv knappetekst for endring av oppdatering (meter) -->
+    <string name="inputboks_meter_oppdatering_posButton">Lagre meter</string>
+
+    <!-- AlertDialog: Forskjellige knapper -->
+    <!-- AlertDialog: Inputboks - Negativ knappetekst (Tekst = "Avbryt") -->
+    <string name="btnAvbryt">Avbryt</string>
+    <!-- AlertDialog: Knapp for å vise adresse -->
+    <string name="btnVisAdresse">Vis adresse</string>
+    <!-- AlertDialog: Knapp for å vise brukere som er online -->
+    <string name="btnVisOnlineBrukere">Vis brukere som er online</string>
+    <!-- AlertDialog: Knapp for å vise Sateliteview -->
+    <string name="btnEndreVisning_1">Vis SateliteView</string>
+    <!-- AlertDialog: Knapp for å vise Streetview -->
+    <string name="btnEndreVisning_2">Vis StreetView</string>
+    <!-- AlertDialog: Finn min lokasjon -->
+    <string name="btnFinnMinLokasjon">Vis min lokasjon</string>
+
+</resources>

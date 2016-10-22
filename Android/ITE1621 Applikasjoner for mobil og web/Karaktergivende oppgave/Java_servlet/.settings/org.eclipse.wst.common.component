@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Karaktergivende_Server_KLA">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Karaktergivende_Server_KLA"/>
+        <property name="java-output-path" value="/Karaktergivende_Server_KLA/build/classes"/>
+    </wb-module>
+</project-modules>

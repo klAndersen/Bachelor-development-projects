@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oblig2A_knutlucasandersen"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Main activity -->
+        <activity
+            android:name=".Oblig2_DelA"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Opplisting av registrerte titler -->
+        <activity
+            android:name=".BokListeActivity"
+            android:exported="true"
+            android:label="@string/app_bokliste"
+            android:parentActivityName=".BokListeActivity" >
+            <intent-filter>
+                <action android:name="com.example.oblig2A_knutlucasandersen.BOKLISTE_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig2_knutlucasandersen.BoklisteAcitivty" />
+        </activity>
+        <!-- Registrering av ny boktittel -->
+        <activity
+            android:name=".RegistrerNyBokActivity"
+            android:exported="true"
+            android:label="@string/app_nyTittel"
+            android:parentActivityName=".RegistrerNyBokActivity" >
+            <intent-filter>
+                <action android:name="com.example.oblig2A_knutlucasandersen.REGISTRER_NY_BOK_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig2_knutlucasandersen.RegistrerNyBokActivity" />
+        </activity>
+        <!-- Sletting av en eller flere titler -->
+        <activity
+            android:name=".SlettBokActivity"
+            android:label="@string/app_slettTittel"
+            android:parentActivityName=".SlettBokActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.oblig2_knutlucasandersen.SlettBokActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Integer: default verdi for minutt -->
+    <integer name="default_minutt">1</integer>
+
+    <!-- Integer: default verdi for meter -->
+    <integer name="default_meter">1</integer>
+
+    <!-- Integer: default verdi for zoom -->
+    <integer name="default_zoom">17</integer>
+
+    <!-- Integer: ikke send brukers posisjon -->
+    <integer name="ikke_send_posisjon">999</integer>
+
+</resources>

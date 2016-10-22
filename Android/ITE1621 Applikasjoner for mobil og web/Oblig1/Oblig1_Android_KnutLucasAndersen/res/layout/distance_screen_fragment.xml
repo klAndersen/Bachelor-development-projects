@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+    
+    <!-- Type to convert from -->
+    <TextView 
+        android:id="@+id/tvConvertFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_from" />
+    <Spinner
+        android:id="@+id/spinnerDistance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:entries="@array/distance_array"
+        android:prompt="@string/choose_value" />
+    
+    <!-- Type to convert to -->
+    <TextView 
+		android:id="@+id/tvConvertTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convert_to" />
+    <Spinner
+        android:id="@+id/spinnerDistance2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/distance_array"
+        android:prompt="@string/choose_value" />
+
+    <!-- The value to be converted -->
+    <TextView 
+        android:id="@+id/tvInputValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_value" />
+    
+    <EditText 
+		android:id="@+id/enterConversionValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:digits="0123456789."
+		android:inputType="numberDecimal"
+        android:hint="@string/hintInput" />
+    
+    <Button 
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:text="@string/btnCalculate"
+        android:onClick="ConvertValue"
+        />
+    
+    <!-- The result displayed to the user -->
+    <!-- 
+    android:visibility (http://developer.android.com/reference/android/view/View.html#attr_android:visibility)
+    
+    Constant:	visible		0	 (Visible on screen; the default value)
+	Constant:	invisible	1	 (Not displayed, but taken into account during layout (space is left for it))
+	Constant:	gone		2	 (Completely hidden, as if the view had not been added) 
+		-->
+    <TextView 
+		android:id="@+id/tvConversionResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="@string/tvResult" />
+    
+</LinearLayout>

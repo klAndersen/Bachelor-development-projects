@@ -1,0 +1,65 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Registrer enhet på server -->
+    <item
+        android:id="@+id/action_send_posisjon"
+        android:icon="@drawable/action_register"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_send_posisjon"/>
+    <!-- Avregistrer enhet på server -->
+    <item
+        android:id="@+id/action_stopp_send_posisjon"
+        android:icon="@drawable/action_unregister"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_stopp_send_posisjon"/>
+    <!-- Vis systemlogg -->
+    <item
+        android:id="@+id/activity_systemlogg"
+        android:icon="@drawable/action_systemlog"
+        android:showAsAction="ifRoom"
+        android:title="@string/activity_systemlogg"/>
+    <!-- Vis registrerte ruter -->
+
+
+    <!-- Meny for visning av ruter -->
+    <item
+        android:id="@+id/action_vis_ruter"
+        android:icon="@drawable/action_vis_ruter"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_vis_ruter">
+        <menu>
+
+            <!-- Vis alle lagrede ruter -->
+            <item
+                android:id="@+id/action_alle_ruter"
+                android:icon="@drawable/action_ruter"
+                android:onClick="visAlleRuter"
+                android:title="@string/action_alle_ruter"/>
+            <!-- Vis egne ruter -->
+            <item
+                android:id="@+id/action_egne_ruter"
+                android:icon="@drawable/action_ruter"
+                android:onClick="visBrukersRuter"
+                android:title="@string/action_egne_ruter"/>
+            <!-- Vis andres ruter -->
+            <item
+                android:id="@+id/action_andres_ruter"
+                android:icon="@drawable/action_ruter"
+                android:onClick="visAndresRuter"
+                android:title="@string/action_andres_ruter"/>
+            <!-- Fjern tegnede historikk ruter fra kartet -->
+            <item
+                android:id="@+id/action_fjern_ruter"
+                android:icon="@drawable/action_remove"
+                android:onClick="fjernHistorikkRuter"
+                android:title="@string/action_fjern_ruter"/>
+        </menu>
+    </item>
+    <!-- Vis innstillinger -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/action_settings"
+        android:showAsAction="ifRoom"
+        android:title="@string/activity_innstillinger"/>
+
+</menu>

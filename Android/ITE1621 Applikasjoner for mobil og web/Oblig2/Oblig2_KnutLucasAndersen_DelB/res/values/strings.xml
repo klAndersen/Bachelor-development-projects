@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default verdier -->
+    <string name="app_name">Oblig2 - DelB</string>
+    <string name="action_settings">Innstillinger</string>
+    
+    <!-- TextView -->
+    <!-- Denne skal være tom siden innhold blir tittel som returneres fra DelA -->
+    <string name="tvValgtTittel"></string>
+    <!-- Skal være luft etter kolonn (':') -->
+    <string name="tvReturnertTittel">Valgt tittel: </string>
+    
+    <!-- Buttons -->
+	<string name="btnVisListe">Vis eksisterende titler</string>
+    <string name="btnRegistrerNyBok">Registrer ny tittel</string>
+    
+    <!-- Pakke - og aktivitetsnavn -->
+    <string name="delA_package_name">com.example.oblig2A_knutlucasandersen</string>
+    <string name="delB_package_name">com.example.oblig2B_knutlucasandersen</string>
+    <string name="activity_vis_tittel_liste">.BOKLISTE_ACTIVITY</string>
+    <string name="activity_ny_tittel">.REGISTRER_NY_BOK_ACTIVITY</string>
+    
+    <!-- Kringkastning -->
+    <string name="resultat_melding">Ny boktittel er registrert i systemet:\n</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Applikasjonens navn -->
+    <string name="app_name">Temperaturovervåkning</string>
+
+    <!-- Fragment Activity navn/tittel -->
+    <!-- Tittel for fragment: Liste over målestasjoner og deres temperaturer -->
+    <string name="display_observation_stations_values">Målestasjoner</string>
+    <!-- Tittel for fragment: Liste over linker til yr.no's side(r) -->
+    <string name="display_original_site_links">Linker til yr.no</string>
+
+    <!-- Strings relatert til ActionBar -->
+    <!-- Sub-meny for start/stopp av service -->
+    <string name="action_service_menu">Service</string>
+    <!-- Navngivning for action: Start service -->
+    <string name="action_start_service">Start service</string>
+    <!-- Navngivning for action: Stopp service -->
+    <string name="action_stop_service">Stopp service</string>
+    <!-- Sub-menfor å legge til/fjerne målestasjoner -->
+    <string name="action_observation_station_menu">Målestasjoner</string>
+    <!-- Navngivning for action: Legg til målestasjoner -->
+    <string name="action_add_observation_station">Legg til målestasjoner</string>
+    <!-- Navngivning for action: Fjern målestasjoner -->
+    <string name="action_remove_observation_station">Fjern målestasjoner</string>
+    <!-- Navngivning for action: Settings -->
+    <string name="action_settings">Innstillinger</string>
+
+    <!-- Alternativene som innstilling inneholder -->
+    <!-- Alternativ for oppdatering/nedlastingsintervall for værdata -->
+    <string name="action_settings_interval">Sett intervall for nedlasting</string>
+    <!-- Alternativ for å sette øvre temperaturgrense -->
+    <string name="action_settings_upper_temperature">Sett øvre grense for temperatur</string>
+    <!-- Alternativ for å sette nedre temperaturgrense -->
+    <string name="action_settings_lower_temperature">Sett nedre grense for temperatur</string>
+
+    <!-- Sub-menyen for intervall for oppdatering/nedlasting -->
+
+    <string name="action_settings_download_interval_1h">1. time</string>
+    <string name="action_settings_download_interval_2h">2. time</string>
+    <string name="action_settings_download_interval_4h">4. time</string>
+    <string name="action_settings_download_interval_8h">8. time</string>
+    <string name="action_settings_download_interval_12h">12. time</string>
+    <string name="action_settings_download_interval_24h">24. time</string>
+
+    <!-- InputDialog: tekst for øvre/nedre temperaturgrense -->
+    <!-- Tittel: øvre temperaturgrense (input) -->
+    <string name="inputdialog_title_upper_temperature">Øvre temperaturgrense</string>
+    <!-- InputDialog tekst for øvre temperaturgrense -->
+    <string name="inputdialog_upper_temperature">Skriv inn verdi for den øvre temperaturgrensen \n(Denne må være høyere enn grense satt for nedre)</string>
+    <!-- Tittel: nedre temperaturgrense (input) -->
+    <string name="inputdialog_title_lower_temperature">Nedre temperaturgrense</string>
+    <!-- InputDialog tekst for nedre temperaturgrense -->
+    <string name="inputdialog_lower_temperature">Skriv inn verdi for den nedre temperaturgrensen \n(Denne må være lavere enn grense satt for øvre)</string>
+
+    <!-- Strings som blir brukt/vist på Activity -->
+    <!-- Knappetekst for å vise liste over valgte målestasjoner -->
+    <string name="btnDisplayTemperatureList">Vis liste over målestasjoner</string>
+    <!-- Knappetekst for å vise liste over linker til yr.no's sider som xml-filer er hentet fra -->
+    <string name="btnDisplayLinks">Linker til side for orginalt innhold</string>
+    <!-- Påkrevd tekst for å kunne bruke data fra yr.no: http://om.yr.no/verdata/vilkar/ -->
+    <string name="tvRequiredText">Målestasjoner og temperaturer er hentet fra yr.no. \nVærvarsel fra yr.no, levert av Meteorologisk institutt og NRK</string>
+
+    <!-- Notification beskjeder -->
+    <!-- Notfication tekst: Øvre temperaturgrense overskredet -->
+    <string name="notification_upper_limit">En høyere temperatur enn satt grense er registrert:</string>
+    <!-- Notfication tekst: Nedre temperaturgrense overskredet -->
+    <string name="notification_lower_limit">En lavere temperatur enn satt grense er registrert:</string>
+    <!-- Notfication tekst: Ny temperaturgrense er satt -->
+    <string name="new_temp_limit_set">Den nye temperaturgrensen ble registrert.</string>
+    <!-- Notfication tekst: Nytt tidsintervall for nedlasting er satt -->
+    <string name="new_time_interval_set">Nytt tidsintervall er satt. \nNeste nedlasting skjer: </string>
+    <!-- Notification tekst: Service stoppes (vises i onDestroy()) -->
+    <string name="service_on_destroy">Service avsluttes. \nNB! Det skjer ingen nedlasting før service startes igjen.</string>
+
+    <!-- Filnavn som inneholder brukers valgte målestasjoner -->
+    <string name="filename_saved_stations">SelectedObservationStations</string>
+    <!-- Filnavn som inneholder de nedlastede temperaturene -->
+    <string name="filename_saved_temperatures">SavedTemperatures</string>
+    <!-- Filnavn som inneholder plassene som bruker kan hente målestasjoner fra -->
+    <string name="filename_view_of_places">places_to_observe</string>
+
+    <!-- Kompontenter som vises på LeggTilMaalestasjonActivity -->
+    <!-- Checkbox -->
+    <string name="chktvChooseAll">Velg alle</string>
+    <!-- Button Lagring -->
+    <string name="btnSave">Lagre målestasjoner</string>
+    <!-- Button Sletting -->
+    <string name="btnDelete">Slett valgte målestasjoner</string>
+
+    <!-- Feilmeldinger -->
+    <!-- Ukjent feil oppsto -->
+    <string name="uknown_error_exception">En feil oppsto. Feilen som oppsto var:\n</string>
+    <!-- Feil oppsto under lesing fra fil -->
+    <string name="read_from_file_exception">Feil oppsto under lesing: \n</string>
+    <!-- Feil oppsto under skriving til fil -->
+    <string name="write_to_file_exception">Feil oppsto under skriving: \n</string>
+    <!-- Verdi innskrevet er ikke tallverdi (numerisk) -->
+    <string name="number_format_exception">Ugyldig input. Gyldig verdi er tallverdi/siffer (0 &#8211; 9).</string>
+    <!-- Ikke tilkoblet til internett -->
+    <string name="no_internet_connection_found">Kunne ikke laste ned værdata.\nEr du tilkoblet til internett?</string>
+
+</resources>

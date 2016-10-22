@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Oblig2_DelB" >
+    
+    <TextView 
+        android:id="@+id/tvValgtTittel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp" 
+        android:layout_alignParentTop="true"
+        android:text="@string/tvValgtTittel"/>
+    
+    <Button     
+        android:id="@+id/btnVisListe"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/tvValgtTittel"
+     	android:text="@string/btnVisListe"
+     	android:onClick="visListe" />
+    
+	<Button     
+	    android:id="@+id/btnRegistrerNyBok"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/btnVisListe"
+     	android:text="@string/btnRegistrerNyBok"
+     	android:onClick="registrerNyBok" />
+
+</RelativeLayout>
