@@ -1,0 +1,7 @@
+create or replace
+TRIGGER SNR_TRIGGER
+BEFORE INSERT ON SELGER_TBL 
+for each row 
+BEGIN
+  SELECT SNR_SEKVENS.nextval into :new.S_NR FROM DUAL;
+END;

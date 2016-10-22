@@ -1,0 +1,7 @@
+create or replace
+TRIGGER KNR_TRIGGER
+BEFORE INSERT ON KJOPER_TBL 
+for each row 
+BEGIN
+  SELECT KNR_SEKVENS.nextval into :new.K_NR FROM DUAL;
+END;

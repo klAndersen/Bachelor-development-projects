@@ -1,0 +1,1 @@
+create table lag_tbl of lag_type;

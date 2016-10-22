@@ -1,0 +1,1 @@
+create table medlem_tbl of medlem_type;

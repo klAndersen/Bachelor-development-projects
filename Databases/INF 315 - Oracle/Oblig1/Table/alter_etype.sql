@@ -1,0 +1,1 @@
+alter table eiendomtype_tbl add constraint pk_typeid primary key (type_id);

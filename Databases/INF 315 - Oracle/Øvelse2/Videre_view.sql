@@ -1,0 +1,1 @@
+select * from lagmedlemmer_view;

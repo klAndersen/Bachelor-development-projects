@@ -1,0 +1,1 @@
+alter user H11_ANDERSEN identified by HibuLucas

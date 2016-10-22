@@ -1,0 +1,1 @@
+revoke select on bileier from SCOTT;

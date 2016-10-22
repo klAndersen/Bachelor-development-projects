@@ -1,0 +1,1 @@
+select lag.lagliste() as Oversikt from lag_tbl lag;
