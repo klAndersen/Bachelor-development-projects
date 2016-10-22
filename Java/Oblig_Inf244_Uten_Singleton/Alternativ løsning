@@ -1,0 +1,424 @@
+showMessageDialog - verdier
+    ERROR_MESSAGE
+    INFORMATION_MESSAGE
+    WARNING_MESSAGE
+    QUESTION_MESSAGE
+    PLAIN_MESSAGE 
+
+
+
+Gui-klassen:
+
+package oblig_244;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+class Grensesnitt extends JFrame {
+    private JButton k1,k2,k3,k4,k5,k6,k7;
+    
+    public Grensesnitt (String tittel) {
+        setTitle(tittel);
+        setLayout(new GridLayout(7,1));
+        KnappeLytter lytt = new KnappeLytter();
+        k1 = new JButton("1: Registrer et nytt dyr");
+        k1.addActionListener(lytt);
+        add(k1);
+        k2 = new JButton("2: Registrer en gjenfangst");
+        add(k2);
+        k3 = new JButton("3: Søk på dyr (via id)");
+        k3.addActionListener(lytt);
+        add(k3);
+        k4 = new JButton("4: Søk etter antall gjenfangster (på et år)");
+        add(k4);
+        k5 = new JButton("5: Oversikt over haretyper");
+        add(k5);
+        k6 = new JButton("6: Vis rapport over dyr som er fanget");
+        add(k6);
+        k7 = new JButton("7: Avslutt programmet");
+        k7.addActionListener(lytt);
+        add(k7);
+        pack();
+    } //konstruktør
+    
+    private class KnappeLytter implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            JButton knapp = (JButton) hendelse.getSource();
+            if (knapp == k1) {
+                NyttDyr dyrVindu = new NyttDyr("Registrer fangst");
+                dyrVindu.setSize(300, 500);
+                dyrVindu.setVisible(true);
+            } else if (knapp == k2) {
+                
+            } else if (knapp == k3) {
+                
+            } else if (knapp == k4) {
+                
+            } else if (knapp == k5) {
+                
+            } else if (knapp == k6) {
+                
+            } else {
+                System.exit(0);
+            }
+        } //actionPerformed
+    } //KnappeLytter
+}
+
+NyttDyr-klassen:
+
+package oblig_244;
+
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import java.awt.event.*;
+
+class NyttDyr extends JFrame {
+    JButton lagre, avbryt;
+    //dyr
+    JRadioButton dyr1 = new JRadioButton("Hare",false);
+    JRadioButton dyr2 = new JRadioButton("Gaupe",true);
+    //kjønn
+    JRadioButton kjonnM = new JRadioButton("Male",true);
+    JRadioButton kjonnF = new JRadioButton("Female",false);
+    //farge
+    JRadioButton type1 = new JRadioButton("Sørlig",true);
+    JRadioButton type2 = new JRadioButton("Vanlig",false);
+    //haretype
+    JRadioButton farge1 = new JRadioButton("Hvit",true);
+    JRadioButton farge2= new JRadioButton("Brun",false);
+    JLabel label;
+    JTextField vekt, lengde;
+
+    public NyttDyr(String tittel) {
+        setTitle(tittel);
+        setLayout(new GridLayout(7,1));
+        Radiopanel dyr = new Radiopanel();
+        Radiopanel2 kjonn = new Radiopanel2();
+
+        
+        add(kjonn);
+        add(dyr);
+        label  = new JLabel("Skriv inn lengde: ");
+        add(label);
+        label  = new JLabel("Skriv inn vekt: ");                
+        add(label);
+        
+        pack();
+    }
+
+    private class Radiopanel extends JPanel {       
+        public Radiopanel() {           
+            RadioknappLytter rLytt = new RadioknappLytter();
+            ButtonGroup dyreGruppe = new ButtonGroup();
+            
+            dyreGruppe.add(dyr1);
+            dyreGruppe.add(dyr2);
+
+            add(dyr1);
+            dyr1.addActionListener(rLytt);
+
+            add(dyr2);                      
+            dyr2.addActionListener(rLytt);
+
+            /*Lager en ramme rundt objektet*/
+            SoftBevelBorder ramme = new SoftBevelBorder(BevelBorder.RAISED);
+            Border gruppeboks = BorderFactory.createTitledBorder(ramme,"Hvilket dyr er fanget?");
+            setBorder(gruppeboks);
+        }
+    }
+
+    private class Radiopanel2 extends JPanel {
+        public Radiopanel2() {          
+            RadioknappLytter2 rLytt = new RadioknappLytter2();
+            ButtonGroup kjonnGruppe = new ButtonGroup();
+            
+            kjonnGruppe.add(kjonnM);
+            kjonnGruppe.add(kjonnF);
+
+            add(kjonnM);
+            kjonnM.addActionListener(rLytt);
+
+            add(kjonnF);                        
+            kjonnF.addActionListener(rLytt);
+
+            /*Lager en ramme rundt objektet*/
+            SoftBevelBorder ramme = new SoftBevelBorder(BevelBorder.RAISED);
+            Border gruppeboks = BorderFactory.createTitledBorder(ramme,"Hvilket kjønn er dyret?");
+            setBorder(gruppeboks);
+        }
+    }
+    
+    private class Radiopanel3 extends JPanel {      
+        public Radiopanel3() {          
+            RadioknappLytter3 rLytt = new RadioknappLytter3();
+            ButtonGroup typeGruppe = new ButtonGroup();
+            
+            typeGruppe.add(type1);
+            typeGruppe.add(type2);
+
+            add(type1);
+            type1.addActionListener(rLytt);
+
+            add(type2);                     
+            type2.addActionListener(rLytt);
+
+            /*Lager en ramme rundt objektet*/
+            SoftBevelBorder ramme = new SoftBevelBorder(BevelBorder.RAISED);
+            Border gruppeboks = BorderFactory.createTitledBorder(ramme,"Hvilken type hare er fanget?");
+            setBorder(gruppeboks);
+        }
+    }
+
+    private class Radiopanel4 extends JPanel {
+        public Radiopanel4() {          
+            RadioknappLytter4 rLytt = new RadioknappLytter4();
+            ButtonGroup fargeGruppe = new ButtonGroup();
+            
+            fargeGruppe.add(farge1);
+            fargeGruppe.add(farge2);
+
+            add(farge1);
+            farge1.addActionListener(rLytt);
+
+            add(farge2);                        
+            farge2.addActionListener(rLytt);
+
+            /*Lager en ramme rundt objektet*/
+            SoftBevelBorder ramme = new SoftBevelBorder(BevelBorder.RAISED);
+            Border gruppeboks = BorderFactory.createTitledBorder(ramme,"Hvilken farge har haren?");
+            setBorder(gruppeboks);
+        }
+    }
+
+    private class RadioknappLytter implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            JLabel ore  = new JLabel("Lengde på øretust: ");
+            String valgt  = hendelse.getActionCommand();
+            Radiopanel3 type = new Radiopanel3();
+            Radiopanel4 farge = new Radiopanel4();
+            if (valgt.equals("Hare")) {             
+                add(type);
+                add(farge);
+            } else {        
+                add(ore);           
+            }
+        }
+    }
+
+    private class RadioknappLytter2 implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            String valgt  = hendelse.getActionCommand();
+            char kjonn;
+            if (valgt.equals("Male")) {             
+                kjonn = 'M';
+            } else {
+                kjonn = 'F';
+            }
+        }
+    }
+    
+    private class RadioknappLytter3 implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            String valgt  = hendelse.getActionCommand();
+            char type;
+            if (valgt.equals("Sørlig")) {               
+                type = 'S';
+            } else {
+                type = 'V';
+            }
+        }
+    }
+
+    private class RadioknappLytter4 implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            String valgt  = hendelse.getActionCommand();
+            String farge;
+            if (valgt.equals("Hvit")) {             
+                farge = "Hvit";
+            } else {
+                farge = "Brun";
+            }
+        }
+    }
+
+    private class KnappeLytter implements ActionListener {
+        public void actionPerformed(ActionEvent hendelse) {
+            JButton knapp = (JButton) hendelse.getSource();
+            if (knapp == lagre) {               
+
+            } else {
+                System.exit(0);
+            }
+        } //actionPerformed
+    } //KnappeLytter
+}
+
+//Enabled/Disabled lagre-knapp:
+
+    public boolean sjekkTekstfelt() {
+        String l = lengde.getText();
+        String v = vekt.getText();
+        String d = dato.getText();
+        String s = sted.getText();
+        if (l.equals("") || v.equals("") || d.equals("") || s.equals("")) {
+            return false;
+        } else {
+            return true;
+        }//if
+    }   //sjekkTekstfelt
+    
+            boolean aktiv = sjekkTekstfelt();
+        System.out.println(aktiv);
+        lagre.setEnabled(aktiv);
+        
+        
+        Databaseting:
+        
+            Kontroll kontroll = new Kontroll();
+    
+    public void kobleTil(String bruker, String pwd) {
+        kontroll.kobleTil(bruker, pwd);
+    }
+    
+     
+     
+     
+        public String[] getId() {
+        String [] id  = new String[MAX_ANTALL];
+        String sqlsetning = null;
+        ResultSet res = null;
+        int i = 0;
+        try {
+            sqlsetning = "SELECT idDyr " +
+            "FROM  tbldyr " +
+            "ORDER BY idDyr asc; ";
+            //System.out.println(sqlsetning);
+            Statement utsagn = forbindelse.createStatement();
+            res = utsagn.executeQuery(sqlsetning);
+            while(res.next()) {
+                id[i] = res.getString("idDyr");             
+                i++;
+            }
+        } catch (Exception e) {
+            id[i] = null;
+        }
+        return id;
+    }
+
+    public String[] getKjonn() {
+        String [] kjonn = new String[MAX_ANTALL];
+        String sqlsetning = null;
+        ResultSet res = null;
+        int i = 0;
+        try {
+            sqlsetning = "SELECT kjonn " +
+            "FROM  tbldyr " +
+            "ORDER BY idDyr asc ";
+            //System.out.println(sqlsetning);
+            Statement utsagn = forbindelse.createStatement();
+            res = utsagn.executeQuery(sqlsetning);
+            while(res.next()) {
+                kjonn[i] = res.getString("kjonn");
+                i++;
+            }
+        } catch (Exception e) {
+            kjonn[i] = null;
+        }
+        return kjonn;
+    }
+
+    public String[] getDato() {
+        String [] dato = new String[MAX_ANTALL];
+        String sqlsetning = null;
+        ResultSet res = null;
+        int i = 0;
+        try {
+            sqlsetning = "SELECT dato " +
+            "FROM  tbldyr " +
+            "ORDER BY idDyr asc ";
+            //System.out.println(sqlsetning);
+            Statement utsagn = forbindelse.createStatement();
+            res = utsagn.executeQuery(sqlsetning);
+            while(res.next()) {
+                dato[i] = res.getString("dato");
+                i++;
+            }
+        } catch (Exception e) {
+            dato[i] = null;
+        }
+        return dato;
+    }    
+    
+        public String[][] hentJTable() {
+        String[] id = getId();
+        if (id.length < 0) {
+            return null;
+        }
+        int strl = id.length;
+        String[] kjonn = getKjonn();
+        String type;
+        String[] dato = getDato();
+        try {
+            for (int i = 0; i < id.length; i++) {
+                if (id.toString().charAt(0)=='H') {
+                    type = "Hare";
+                } else {
+                    type = "Gaupe";
+                }           
+                String [][] dyr = {{id[i].toString(),kjonn[i].toString(), type, dato[i].toString()}};
+                if (i == strl) { //gir kun en utskrift - krasjer dersom i == strl / i >= strl ....
+                    return dyr;
+                }           
+            }
+        } catch (Exception e) {
+            System.out.print("Feil: " + e);
+        }
+        return null;
+    } //hentJTable
+
+class TekstfeltPanel extends JPanel {
+    private JLabel label; //Label (brukes for å beskrive feltene på skjerm
+    private JTextField vekt, lengde, sted, dato; //tekstfelt
+    public TekstfeltPanel() {
+        setLayout(new GridLayout(4,2,5,5));
+        //lag en ny label med tekst, denne legges til venstre når den vises på skjerm
+        label  = new JLabel("Skriv inn lengde (punktum som desimaltegn): ", JLabel.LEFT);
+        lengde = new JTextField(10);
+        add(label); //legg til label i panelet
+        add(lengde); //legg til tekstfeltet i panelet
+
+        label  = new JLabel("Skriv inn vekt (punktum som desimaltegn): ", JLabel.LEFT);
+        vekt = new JTextField(10);
+        add(label);     
+        add(vekt);
+
+        label  = new JLabel("Skriv inn sted: ", JLabel.LEFT);
+        sted = new JTextField(10);
+        add(label);     
+        add(sted);
+
+        label  = new JLabel("Skriv inn dato (DD.MM.YYYY): ", JLabel.LEFT); 
+        dato = new JTextField(10);
+        add(label);     
+        add(dato);
+    } //konstruktør
+    
+    public String getLengde() {
+        return lengde.getText();
+    }
+    
+    public String getVekt() {
+        return vekt.getText();
+    }
+    
+    public String getSted() {
+        return sted.getText();
+    }
+    
+    public String getDato() {
+        return dato.getText();
+    }
+} //TekstfeltPanel
