@@ -1,0 +1,31 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=CMF_HELP.chm
+Contents file=CMF_ToC.hhc
+Default topic=HTML Helpfiles\Startpage.html
+Display compile progress=No
+Index file=CMF_Index.hhk
+Language=0x409 English (United States)
+Title=CleanMyFolder Help
+
+
+[FILES]
+HTML Helpfiles\Deleting.html
+HTML Helpfiles\DeletingFiles.html
+HTML Helpfiles\DeletingFolders.html
+HTML Helpfiles\Filetypes.html
+HTML Helpfiles\Logging.html
+HTML Helpfiles\Moving.html
+HTML Helpfiles\MovingFiles.html
+HTML Helpfiles\MovingFolders.html
+HTML Helpfiles\Scanning.html
+HTML Helpfiles\ScanOptions.html
+HTML Helpfiles\ScanResult.html
+HTML Helpfiles\Startpage.html
+HTML Helpfiles\License.html
+HTML Helpfiles\TermsAndConditions.html
+HTML Helpfiles\FolderInformation.html
+HTML Helpfiles\NoResult.html
+
+[INFOTYPES]
+

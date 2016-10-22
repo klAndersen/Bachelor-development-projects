@@ -1,0 +1,14 @@
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\bin\Release\CleanMyFolder.exe
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\bin\Release\CleanMyFolder.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\bin\Release\CMF_Library.dll
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\bin\Release\CMF_Library.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\bin\Release\CMF_Library.xml
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.frmAbout.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.frmProperties.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.exe
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CleanMyFolder\obj\x86\Release\CleanMyFolder.frmCleanMyFolder.resources

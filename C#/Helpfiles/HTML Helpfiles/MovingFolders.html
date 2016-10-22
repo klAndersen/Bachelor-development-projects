@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!-- UTF-8 to make it readable in most languages and better showing special letters/signs-->
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8" /> 
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <!--CSS-->    
+    <link type="text/css" rel="stylesheet" href="Help.css"/>
+    <title>Moving Folders</title>
+  </head>
+  <body>
+    <!--The page displayed-->
+    <div id="page">
+      <!--The pages heading-->
+      <div id="heading">
+        <!--Logo-->
+        <div id="logo"><img src="Images/HelpFile_Logo.png" /></div>
+        <div id="header_text"><h3>Moving Folders</h3></div>
+      </div>
+      <!--Help content displayed to user-->
+      <div id="content">
+        The moving of a folder have two different possibilities, if its a fullscan the 
+        selected folder and all its content (<i>subfolders &amp; files</i>) will be moved.
+        <br />
+        <br />
+        But, if its a specified scan (<i>one or more criterias checked</i>) you may get a notification like this:
+        <br />
+        <!--images-->
+        <div id="image">
+          <!--image of messagebox-->
+          <img src="Images/MsgBox_Moving.jpg" /><br />
+          Messagebox with notification
+        </div>
+        <br />
+        <br />
+        What this means is that this folder may contain more files (<i>and possibly subfolders</i>) then
+        the last scan found.<br /> 
+        If you choose to continue (<i>by pressing 'Yes'</i>), it will create a folder with the same name at the chosen location,<br />
+        and then move the folders displayed subfolders and files. (<i>the subfolders and the corresponding files displayed in the datagridview</i>).
+        <br />
+        <br />
+        <u>Note:</u>
+        <br />
+        <br />
+        If you decide to move a folder of a certain size, and you decide it takes to long, 
+        or for some other reason cancel the move, <br /> 
+        it's recommended that you re-scan the selected path to avoid in-accurate file listings.
+        <br />
+        <br />
+        <!--table containing the navigation buttons-->
+        <table>
+          <tr>
+            <!--the previous button-->
+            <td>
+              <form method="" action="Moving.html">
+                <input type="submit" value="Previous">
+              </form>
+            </td>
+            <!--the next button-->
+            <td>
+              <form method="" action="MovingFiles.html">
+                <input type="submit" value="Next">
+              </form>
+            </td>
+          </tr>
+        </table>
+        <!--Copyright and version--> 
+        CleanMyFolder Copyright &copy; 2012 Knut Lucas Andersen. <br />
+        &lt;Current version 1.0.0.0&gt;
+      </div>
+    </div>
+  </body>
+</html>

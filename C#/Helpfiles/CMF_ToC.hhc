@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="CleanMyFolder">
+		<param name="Local" value="HTML Helpfiles\Startpage.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="General">
+			<param name="Local" value="HTML Helpfiles\Startpage.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="License">
+				<param name="Local" value="HTML Helpfiles\License.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Terms and Conditions">
+				<param name="Local" value="HTML Helpfiles\TermsAndConditions.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Logging">
+				<param name="Local" value="HTML Helpfiles\Logging.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Scanning">
+			<param name="Local" value="HTML Helpfiles\Scanning.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Options">
+				<param name="Local" value="HTML Helpfiles\ScanOptions.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Filetypes/Extensions">
+				<param name="Local" value="HTML Helpfiles\Filetypes.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Result">
+				<param name="Local" value="HTML Helpfiles\ScanResult.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="No files found">
+				<param name="Local" value="HTML Helpfiles\NoResult.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Folder properties">
+				<param name="Local" value="HTML Helpfiles\FolderInformation.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Deleting">
+			<param name="Local" value="HTML Helpfiles\Deleting.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Deleting Folders">
+				<param name="Local" value="HTML Helpfiles\DeletingFolders.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Deleting Files">
+				<param name="Local" value="HTML Helpfiles\DeletingFiles.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Moving">
+			<param name="Local" value="HTML Helpfiles\Moving.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Moving Folders">
+				<param name="Local" value="HTML Helpfiles\MovingFolders.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Moving Files">
+				<param name="Local" value="HTML Helpfiles\MovingFiles.html">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

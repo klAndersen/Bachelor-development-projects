@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.4">
+  <help_text>// Uncomment the following line to change the fontsize and font:
+// fontsize=14
+// fontfamily=SansSerif //possible: SansSerif,Serif,Monospaced
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Welcome to UMLet!
+//
+// Double-click on elements to add them to the diagram, or to copy them
+// Edit elements by modifying the text in this panel
+// Hold Ctrl to select multiple elements
+// Use Ctrl+mouse to select via lasso
+//
+// Use +/- or Ctrl+mouse wheel to zoom
+// Drag a whole relation at its central square icon
+//
+// Press Ctrl+C to copy the whole diagram to the system clipboard (then just paste it to, eg, Word)
+// Edit the files in the "palettes" directory to create your own element palettes
+//
+// Select "Custom Elements &gt; New..." to create new element types
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+//This is the UML Diagram for the Library class
+//of CleanMyFolder
+//CMF_Library.dll</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1240</x>
+      <y>1090</y>
+      <w>160</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enumeration&gt;&gt;
+Package::CMF_Library
+SizeEnum
+--
++ bytes
++ Kb
++ Mb
++ Gb
++ Tb</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>60</x>
+      <y>0</y>
+      <w>600</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+/FilesAndFolders/
+--
+-name: string
+-parentFolder: string
+-size: long
+//not included in the constructor
+-diskSize: long /*not implemented*/
+-toMove: bool
+-toDelete: bool
+-dateCreated: DateTime
+-dateModified: DateTime
+-lastAccessed: DateTime
+--
+#FilesAndFolders(name: string, parentFolder: string, size: long, toMove: bool, toDelete: bool, 
+                dateCreated: DateTime, dateModified: DateTime, lastAccessed: DateTime): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>360</y>
+      <w>460</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;entity&gt;&gt;
+Files : FilesAndFolders
+Package::CMF_Library
+{sealed}
+--
+-extension: string
+--
++Files(fileName: string, extension:string, parentFolder: string, size: long, 
+                toMove: bool, toDelete: bool, dateCreated: DateTime, 
+                dateModified: DateTime, lastAccessed: DateTime): void
+
+           </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>490</x>
+      <y>360</y>
+      <w>540</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;entity&gt;&gt;
+Folders : FilesAndFolders
+Package::CMF_Library
+{sealed}
+--
+-scannedNumberFiles: int
+-totNumberFiles: int
+--
++Folders(folderName: string, size: long, toMove: bool, toDelete: bool, 
+                dateCreated: DateTime, dateModified: DateTime, lastAccessed: DateTime, 
+                parentFolder: string, totNumberFiles:int, scannedNumberFiles:int): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>100</x>
+      <y>210</y>
+      <w>140</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+&lt;&lt;inherits&gt;&gt;</panel_attributes>
+    <additional_attributes>30;150;30;100;120;100;120;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>400</x>
+      <y>210</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;
+&lt;&lt;inherits&gt;&gt;</panel_attributes>
+    <additional_attributes>220;150;220;90;30;90;30;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>10</x>
+      <y>960</y>
+      <w>730</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;entity&gt;&gt;
+Package::CMF_Library
+_MoveOrDeleteObjects_
+{internal}
+--
+_~moveFilesToRecycleBin(filePath: string): void_
+_~moveFoldersToRecycleBin(filePath: string): void_
+_~deleteFilePermanently(filePath: string): void_
+_~deleteFolderPermanently(filePath: string): void_
+_~moveFile(pathFrom: string, pathTo: string): void_
+_-moveFilesInList(pathTo: string, parentFolder: string, fileList:List&lt;Files&gt;): void_
+_~moveWholeFolder(pathFrom: string, pathTo: string): void_
+_~moveFoldersContent(pathFrom: string, pathTo: string, subFolderList: List&lt;Folders&gt;, moveFileList: List&lt;Files&gt;): void_
+_-moveSubFolders(pathTo: string, parentFolder: string, subFolderList: List&lt;Folders&gt;, moveFileList: List&lt;Files&gt;): void_
+_-createNewFolders(createPath:string): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>820</x>
+      <y>1170</y>
+      <w>240</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Imports Microsoft.VisualBasic.FileIO</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>1100</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>30;30;110;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>0</x>
+      <y>560</y>
+      <w>800</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;entity&gt;&gt;
+Package::CMF_Library
+_Logging_
+{internal}
+--
+//constants
+_-LOG_FILENAME = "Log.txt": string /*constant*/_
+_-START_SCAN = "STARTED SCANNING: ": string /*constant*/_
+_-MOVE_FILES = "FOLLOWING FILES WERE MOVED FROM: ": string /*constant*/_
+_-FILES_RECYCLE_BIN = "FOLLOWING FILES WERE MOVED TO RECYCLE BIN": string /*constant*/_
+_-DELETE_FILES_PERMANENTLY = "FOLLOWING FILES WERE DELETED PERMANENTLY": string /*constant*/_
+_-MOVE_FOLDERS = "FOLDER AND ITS CONTENT WAS MOVED FROM: ": string /*constant*/_
+_-FOLDERS_RECYCLE_BIN = "FOLDER AND ITS CONTENT WAS MOVED TO RECYCLE BIN": string /*constant*/_
+_-DELETE_FOLDERS_PERMANENTLY = "FOLDER AND ITS CONTENT WAS DELETED PERMANENTLY": string /*constant*/_
+//variables
+_-logContent: string_
+_-operationPath: string_
+_-titleLength: int_
+--
+_~writeStatusToLog(int operation, string dateDescription): void_
+_~writeProgressToLog(): void
+_-writeLog(logFile: string, logText: string) : void_
+_-createTitle(title: string): void_
+_-addSymbols(sign: string): void_
+_-returnTitle(operation: int): void_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1060</x>
+      <y>10</y>
+      <w>740</w>
+      <h>1040</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;control&gt;&gt;
+Package::CMF_Library
+ControlClass
+--
+_+controlClass: ControlClass = new ControlClass() /*readonly*/_
+_-progress: string
+-CSC_FOLDER: string = @"C:\Windows\CSC" /*constant*/
+-exceptionList: List&lt;string&gt; = new List&lt;string&gt;()
+-currentFileSize: long
+-numFiles: int
+_-foldersRead:List&lt;Folders&gt; = new List&lt;Folders&gt;()_
+-filesRead:List&lt;Files&gt; = new List&lt;Files&gt;()
+-sizeParameter: Enum
+-sizeConverted: double
+--
+-ControlClass()
+~ControlClass()
+-clearLists(): void
++startFullScan(path: string, bw: BackgroundWorker, scanSub: bool): void
++startSpecifiedScan(path:string, searchpattern: string[], bw: BackgroundWorker, fileSize: long,
+                                    criterie1: int, criterie2: int, date: DateTime, scanSub: bool): void
+-addOneFolder(path: string): void
+//recursive functions
+-recursiveFunctionFolders(path: string, bw: BackgroundWorker): void
+-recursiveFunctionFiles(bw: BackgroundWorker): void
+-recursiveFunctionFiles(searchpattern: string, bw: BackgroundWorker, fileSize: long,
+                                    criterie1: int, criterie2: int, date: DateTime): void
+-loopThroughFiles(folder: Folders, searchpattern: string, fileSize: long,
+                                    criterie1: int, criterie2: int, date: DateTime, bw: BackgroundWorker):void
+//dates
+-checkDate(folder: Folders, fileInfo:FileInfoo, criterie1: int, criterie2: int, date: DateTime):void
+-dateOlderThen(fileInfo:FileInfo, folder: Folders, criteria: int, date: DateTime):void
+-dateNewerThen(fileInfo:FileInfo, folder: Folders, criteria: int, date: DateTime):void
+-addFiles(folder: Folders, fileInfo:FileInfo):void
+//record result in lists
+-recordSuccessFolderAccess(success: Folders):void
+-recordSuccessFileAccess(success: Files):void
+-recordExceptions(error: string):void
+//size calculation
+_-setSizeOfFolders(bw: BackgroundWorker):void_
+_-getChildSize(parent: string, bw: BackgroundWorker):long_
+//return methods for lists
++returnListOfFolders(): List&lt;Folders&gt;
++returnListOfFiles(): List&lt;Files&gt;
++returnListOfErrors(): List&lt;string&gt;
++returnFilesToBeShown(filesList: List&lt;Files&gt;, parentFolder: string): List&lt;Files&gt;
++returnFilesToBeShown(filesList: List&lt;Files&gt;, parentFolder: string, sortAsc: bool): List&lt;Files&gt;
+//count methods
++countFilesScanned(parent: string, folderList: List&lt;Folders&gt;): int
++countFilesScanned(parent: string, folderList: List&lt;Folders&gt;, bw: BackgroundWorker): int
++countTotalNumberOfFiles(parent: string, folderList: List&lt;Folders&gt;): int
++countFilesToBeShown(filesList: List&lt;Files&gt;, parentFolder: string): int
++countFilesToMove(filesList: List&lt;Files&gt;): int
++countFilesToDelete(filesList: List&lt;Files&gt;): int
+//moving and deleting
++moveFiles(pathFrom: string, pathTo: string): void
++moveFilesToRecycleBin(filePath: string): void
++deleteFilesPermanently(filePath: string): void
++moveWholeFolder(pathFrom: string, pathTo: string): void
++moveFoldersContent(pathFrom: string, pathTo: string, subFolderList: List&lt;Folders&gt;, moveFileList: List&lt;Files&gt;): void
++moveFolderToRecycleBin(folderPath: string): void
++deleteFoldersPermanently(folderPath: string): void
+//size convertion
++convertSizeValue(sizeValue: long): void
+-convertToKB(size: double): double
+-convertToMB(size: double): double
+-convertToGB(size: double): double
+-convertToTB(size: double): double
+//logging
++writeStatusToLog(operation: int, dateDescription: string): void
++writeProgressToLog(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>630</x>
+      <y>30</y>
+      <w>450</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;&gt;&gt;&gt;
+m1=0..n</panel_attributes>
+    <additional_attributes>30;30;430;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>710</x>
+      <y>950</y>
+      <w>370</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+Moves or deletes the object(s)</panel_attributes>
+    <additional_attributes>30;50;350;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>770</x>
+      <y>670</y>
+      <w>310</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=-
+Logs the operation</panel_attributes>
+    <additional_attributes>30;50;290;50</additional_attributes>
+  </element>
+</diagram>

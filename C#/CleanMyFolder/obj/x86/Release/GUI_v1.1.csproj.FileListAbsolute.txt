@@ -1,0 +1,13 @@
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\bin\Release\Library.dll
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\bin\Release\Library.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\bin\Release\Library.xml
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GUI_v1_1.frmGui.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GUI_v1_1.frmProperties.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\bin\Release\GUI_v1_1.exe
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\bin\Release\GUI_v1_1.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GUI_v1_1.Properties.Resources.resources
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GUI_v1_1.exe
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\GUI v1 - v\GUI_v1.1\obj\x86\Release\GUI_v1_1.pdb

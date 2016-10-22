@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <!-- UTF-8 to make it readable in most languages and better showing special letters/signs-->
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />                 
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <!--CSS-->    
+    <link type="text/css" rel="stylesheet" href="Help.css"/>
+    <title>Scan options</title>
+  </head>
+  <body>
+    <!--The page displayed-->
+    <div id="page">
+      <!--The pages heading-->
+      <div id="heading">
+        <!--Logo-->
+        <div id="logo"><img src="Images/HelpFile_Logo.png" /></div>
+        <div id="header_text"><h3>Options</h3></div>
+      </div>
+      <!--Help content displayed to user-->
+      <div id="content">
+        <!--images-->
+        <div id="image">
+          <!--image of startscreen-->
+          <img src="Images/Startscreen.jpg" /><br />
+          Startscreen with settings for the scan
+        </div>
+        <ol>
+          <li>Path to be scanned</li>
+          <li>
+            Include/exclude subfolders from scan<br />
+            (<i>default is checked</i>)
+          </li>
+          <li>Check to include specific <a href="Filetypes.html">filetypes</a> in scan</li>
+          <li>
+            Check to include files over a specific size
+            <!--images-->
+            <div id="image">
+              <!--image over the different options for size-->
+              <img src="Images/Size_Options.jpg" /><br />
+              The size value goes from 0 - 999, and the parameter from bytes to terrabytes.<br />
+            </div>
+          </li>
+          <br /> 
+          <li>
+            Check to include files older/newer then and select the date
+            <!--images-->
+            <div id="image">
+              <!--image over selection of date-->
+              <img src="Images/Date_Options.jpg"><br />
+              The 'max date' is todays date
+            </div>
+            <br />
+          </li>
+          <li>
+            Check to specify what date to scan for<br /> 
+            (<i>default is 'date created'</i>)
+            <!--images-->
+            <div id="image">
+              <!--image over the different datetypes to search for-->
+              <img src="Images/Date_Options2.jpg"><br />
+              Scan for files that are 'older/newer then' 'date created', 'date modified' or 'last accessed'
+            </div>
+          </li>
+          <br />
+          <li>Listbox displaying information and error messages</li>
+          <li>Progress during scan is displayed here</li>
+          <li>'Start scan': Starts the scan (<i>a path must be selected</i>)</li>
+          <li>
+            'Cancel scan': Cancels the scan.<br /> 
+            (<i>No results will be shown, and previous results will be removed</i>).
+          </li>
+          <li>
+            'Reset': Removes the path, checked criterias and values 
+            (<i>size, date, etc</i>).
+          </li>
+        </ol>
+        <!--table containing the navigation buttons-->
+        <table>
+          <tr>
+            <!--the previous button-->
+            <td>
+              <form method="" action="Scanning.html">
+                <input type="submit" value="Previous">
+              </form>
+            </td>
+            <!--the next button-->
+            <td>
+              <form method="" action="Filetypes.html">
+                <input type="submit" value="Next">
+              </form>
+            </td>
+          </tr>
+        </table>
+        <!--Copyright and version--> 
+        CleanMyFolder Copyright &copy; 2012 Knut Lucas Andersen. <br />
+        &lt;Current version 1.0.0.0&gt;
+      </div>
+    </div>
+  </body>
+</html>

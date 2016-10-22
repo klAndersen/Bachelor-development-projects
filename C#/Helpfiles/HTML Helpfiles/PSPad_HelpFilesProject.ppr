@@ -1,0 +1,42 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+[Project tree]
+New project
+	+Helpfiles
+		Deleting.html
+		DeletingFiles.html
+		DeletingFolders.html
+		Filetypes.html
+		FolderInformation.html
+		Help.css
+		License.html
+		Logging.html
+		Moving.html
+		MovingFiles.html
+		MovingFolders.html
+		Scanning.html
+		ScanOptions.html
+		ScanResult.html
+		Startpage.html
+		TermsAndConditions.html
+[Open project files]
+0=New1.txt
+1=Startpage.html
+[Selected Project Files]
+Main=
+Selected=Startpage.html
+[New1.txt]
+TopLine=1
+Caret=1,1
+[Startpage.html]
+TopLine=1
+Caret=1,1

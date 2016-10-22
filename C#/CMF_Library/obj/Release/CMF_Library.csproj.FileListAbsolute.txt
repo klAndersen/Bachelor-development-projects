@@ -1,0 +1,6 @@
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\bin\Release\CMF_Library.dll
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\bin\Release\CMF_Library.pdb
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\bin\Release\CMF_Library.xml
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\obj\Release\CMF_Library.dll
+C:\Users\Lucas\Dropbox\Inf 350 - Bacheloroppgave\Ferdig utgave av CleanMyFolder\CMF_Library\obj\Release\CMF_Library.pdb

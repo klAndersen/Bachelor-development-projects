@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CMF_Library</name>
+    </assembly>
+    <members>
+        <member name="T:CMF_Library.SizeEnum">
+            <summary>
+            The enum for the different size parameters
+            </summary>
+        </member>
+        <member name="T:CMF_Library.MoveOrDeleteObjects">
+            <summary>
+            This class handles operations related to moving and deleting 
+            folders and files
+            </summary>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.moveFilesToRecycleBin(System.String)">
+            <summary>
+            This method moves the file(s) to the recycle bin. It shows only 
+            error messages and does not ask if user wants to delete the file(s) 
+            since this is already chosen when this method is called.
+            </summary>
+            <param name="filePath">The path to the file thats to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.moveFoldersToRecycleBin(System.String)">
+            <summary>
+            This method moves the folder(s) to the recycle bin. It shows only 
+            error messages and does not ask if user wants to delete the folder(s) 
+            since this is already chosen when this method is called.
+            </summary>
+            <param name="folderPath">The path to the folder thats to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.deleteFilePermanently(System.String)">
+            <summary>
+            This method deletes the file(s) permanently. It shows only 
+            error messages and does not ask if user wants to delete the file(s) 
+            since this is already chosen when this method is called.
+            </summary>
+            <param name="filePath">The path where the file(s) exists</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.deleteFolderPermanently(System.String)">
+            <summary>
+            This method deletes the folder(s) permanently. It shows only 
+            error messages and does not ask if user wants to delete the folder(s) 
+            since this is already chosen when this method is called.
+            </summary>
+            <param name="folderPath">The path where the folder(s) exists</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.moveFile(System.String,System.String)">
+            <summary>
+            This method moves a file. To move multiple files a surrounding loop
+            will be needed.
+            </summary>
+            <param name="pathFrom">The path where the file(s) exists</param>
+            <param name="pathTo">The path the file(s) is to be moved to</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.moveWholeFolder(System.String,System.String)">
+            <summary>
+            This method moves the whole folder, with all content 
+            (files and subfolders) to a new location.
+            </summary>
+            <param name="pathFrom">The path where the folder exists</param>
+            <param name="pathTo">The path the folder is to be moved to</param>
+        </member>
+        <member name="M:CMF_Library.MoveOrDeleteObjects.moveFoldersContent(System.String,System.String,System.Collections.Generic.List{CMF_Library.Folders},System.Collections.Generic.List{CMF_Library.Files})">
+            <summary>
+            This method moves the folder and its content (subfolders and files). 
+            This only moves the content shown "on-screen" based on the scan criterias when 
+            scan started. Files not matching the scan criterias are left at its current location.
+            </summary>
+            <param name="pathFrom">The folder were the files and subfolders are to be moved from</param>
+            <param name="pathTo">The location were the files and subfolders are to be moved to</param>
+            <param name="subFolderList">List&lt;Folders&gt; with subfolders (do not include the point to move from)</param>
+            <param name="moveFileList">List&lt;Files&gt; with files to be moved</param>
+        </member>
+        <member name="T:CMF_Library.Files">
+            <summary>
+            The class that creates objects of Files, inherits from FilesAndFolders. 
+            Not inheritable.
+            </summary>
+        </member>
+        <member name="T:CMF_Library.FilesAndFolders">
+            <summary>
+            This is the abstract parent class to the classes Folders and Files.
+            Contains all the common shared methods for getting and setting values.
+            </summary>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.#ctor(System.String,System.String,System.Int64,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            The constructor setting the shared values for Files and Folders
+            </summary>
+            <param name="name">Name of the folder/file</param>
+            <param name="parentFolder">Name of the parent folder</param>
+            <param name="size">The size</param>
+            <param name="toMove">Is the folder/file to be moved?</param>
+            <param name="toDelete">Is this folder/file to be deleted?</param>
+            <param name="dateCreated">The date the folder/file was created</param>
+            <param name="dateModified">The date the folder/file was last modified</param>
+            <param name="lastAccessed">The date the folder/file was last accessed</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getName">
+            <summary>
+            Gets the name of the object. 
+            Files: The name
+            Folders: The full path
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getParentFolder">
+            <summary>
+            Gets the name of the objects parent directory/folder
+            (returns null if the folder is "root")
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getSize">
+            <summary>
+            Gets the size of the object
+            </summary>
+            <returns>long</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getDiskSize">
+            <summary>
+            Gets the objects size on disk (not implemented in constructor)
+            </summary>
+            <returns>long</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getToMove">
+            <summary>
+            Gets if the object is to be moved
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getToDelete">
+            <summary>
+            Gets if the object is to be deleted
+            </summary>
+            <returns>bool</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getDateCreated">
+            <summary>
+            Gets the date and time the object was created
+            </summary>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getDateModified">
+            <summary>
+            Gets the date and time the object was modified
+            </summary>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.getLastAccessed">
+            <summary>
+            Gets the date and time the object was last accessed
+            </summary>
+            <returns>DateTime</returns>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setName(System.String)">
+            <summary>
+            Sets the name of the object
+            </summary>
+            <param name="name">The name of the object</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setParentFolder(System.String)">
+            <summary>
+            Sets the objects parent folder 
+            (if "root" folder, then parentFolder = null)
+            </summary>
+            <param name="parentFolder">The name of parent</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setSize(System.Int64)">
+            <summary>
+            Sets the size of the object
+            </summary>
+            <param name="size">The objects size</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setDiskSize(System.Int64)">
+            <summary>
+            Sets the objects size on disk (not implemented in constructor)
+            </summary>
+            <param name="diskSize">The objects size on disk</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setToMove(System.Boolean)">
+            <summary>
+            Sets if the object is to be moved
+            </summary>
+            <param name="toMove">Is the object to be moved?</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setToDelete(System.Boolean)">
+            <summary>
+            Sets if the object is to be deleted
+            </summary>
+            <param name="toDelete">Is the object to be deleted?</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setDateCreated(System.DateTime)">
+            <summary>
+            Sets the date and time the object was created
+            </summary>
+            <param name="dateCreated">The DateTime the object was created</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setDateModified(System.DateTime)">
+            <summary>
+            Sets the date and time the object was modified
+            </summary>
+            <param name="dateModified">The DateTime the object was modified</param>
+        </member>
+        <member name="M:CMF_Library.FilesAndFolders.setLastAccessed(System.DateTime)">
+            <summary>
+            Sets the date and time the object was last accessed
+            </summary>
+            <param name="lastAccessed">The DateTime the object was last accessed</param>
+        </member>
+        <member name="M:CMF_Library.Files.#ctor(System.String,System.String,System.String,System.Int64,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime)">
+            <summary>
+            The constructor setting the values for the Folders object
+            </summary>
+            <param name="fileName">The name of the file</param>
+            <param name="extension">The type/extension of the file (i.e: .TXT)</param>
+            <param name="parentFolder">The name of the parent folder</param>
+            <param name="size">The size of the file</param>
+            <param name="toMove">Is the file to be moved?</param>
+            <param name="toDelete">Is the file to be deleted?</param>
+            <param name="dateCreated">The date the file was created</param>
+            <param name="dateModified">The date the file was last modified</param>
+            <param name="lastAccessed">The date the file was last accessed</param>
+        </member>
+        <member name="M:CMF_Library.Files.getExtension">
+            <summary>
+            Gets the files extension/type
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.Files.setExtension(System.String)">
+            <summary>
+            Sets the extension type
+            </summary>
+            <param name="extension">The files extension/type</param>
+        </member>
+        <member name="T:CMF_Library.Folders">
+            <summary>
+            This class creates objects of Folders; inherits from FilesAndFolders. 
+            Not inheritable.
+            </summary>
+        </member>
+        <member name="M:CMF_Library.Folders.#ctor(System.String,System.Int64,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.DateTime,System.String,System.Int32,System.Int32)">
+            <summary>
+            The constructor setting the values for the Folders object
+            </summary>
+            <param name="folderName">The name of the folder</param>
+            <param name="size">The size of the folder</param>
+            <param name="toMove">Is this folder to be moved?</param>
+            <param name="toDelete">Is this folder to be deleted?</param>
+            <param name="dateCreated">The date the folder was created</param>
+            <param name="dateModified">The date the folder was last modified</param>
+            <param name="lastAccessed">The date the folder was last accessed</param>
+            <param name="parentFolder">The name of the parent folder</param>
+            <param name="totNumberFiles">The number of files this folder contains</param>
+            <param name="scannedNumberFiles">The number of files this folder contains after scan</param>
+        </member>
+        <member name="M:CMF_Library.Folders.getTotalNumberOfFiles">
+            <summary>
+            Gets the number of files this folder contains in total
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.Folders.getScannedNumberOfFiles">
+            <summary>
+            Gets the number of files this folder contains based on scan
+            </summary>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.Folders.setTotalNumberOfFiles(System.Int32)">
+            <summary>
+            Set the total number of files this folder contains
+            </summary>
+            <param name="totNumberFiles">Number of files folder contains</param>
+        </member>
+        <member name="M:CMF_Library.Folders.setScannedNumberOfFiles(System.Int32)">
+            <summary>
+            Sets the number of files this folder contains after scan
+            </summary>
+            <param name="scannedNumberFiles">Number of files scanned</param>
+        </member>
+        <member name="T:CMF_Library.Logging">
+            <summary>
+            This is the logging class and handles everything thats connected to logging.
+            Logging class logs all from scan started to events as moving, deleting 
+            and other operations the application does.
+            </summary>
+        </member>
+        <member name="M:CMF_Library.Logging.writeStatusToLog(System.Int32,System.String)">
+            <summary>
+            Logging method writes to the log file. It adds symbols, title and the 
+            current date and time the operation started/ended.
+            </summary>
+            <param name="operation">The value for the operation in progress 
+            (0 = Scan, 1 = Move files, 2 = Move files to recycle bin, 
+            3 = Delete files permanently, 4 = Move folders, 
+            5 = Move folders to Recycle bin, 6 = Delete folders permanently)</param>
+            <param name="dateDescription">The text to be set before the date which appears in the log</param>
+        </member>
+        <member name="M:CMF_Library.Logging.writeProgressToLog">
+            <summary>
+            This method writes content to the logfile. 
+            The content to be written is set in the method setContent(string content).
+            </summary>
+        </member>
+        <member name="M:CMF_Library.Logging.returnTitle(System.Int32)">
+            <summary>
+            Returns the title. The operation is an int telling which 
+            operation was started.
+            </summary>
+            <param name="operation">
+            0 = Scan, 1 = Move files, 2 = Move files to recycle bin, 
+            3 = Delete files permanently, 4 = Move folders, 
+            5 = Move folders to Recycle bin, 6 = Delete folders permanently
+            </param>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.Logging.getLogsPath">
+            <summary>
+            Gets the location of where the log file exists
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.Logging.getContent">
+            <summary>
+            Gets the content to be written to the logfile
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.Logging.getOperationPath">
+            <summary>
+            Gets the location that currently is being processed 
+            (moved, deleted, scanned).
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.Logging.setContent(System.String)">
+            <summary>
+            Sets the current text to be written to the logfile.
+            Can be one line or multiple lines seperated by "\r\n".
+            </summary>
+            <param name="logContent">Text to be written to log</param>
+        </member>
+        <member name="M:CMF_Library.Logging.setOperationPath(System.String)">
+            <summary>
+            Sets the location that currently is being processed (moved, deleted, scanned).
+            Note: This is the path from which the operation started.
+            </summary>
+            <param name="operationPath">The path currently being processed</param>
+        </member>
+        <member name="T:CMF_Library.ControlClass">
+            <summary>
+            The class "communicating" between the userinterface and the library.
+            </summary>
+        </member>
+        <member name="F:CMF_Library.ControlClass.controlClass">
+            <summary>
+            Readonly object of the ControlClass used as "communicator"
+            </summary>
+        </member>
+        <member name="M:CMF_Library.ControlClass.Finalize">
+            <summary>
+            The destructor of the ControlClass. Empties all this class lists.
+            </summary>
+        </member>
+        <member name="M:CMF_Library.ControlClass.startFullScan(System.String,System.ComponentModel.BackgroundWorker,System.Boolean)">
+            <summary>
+            Starts a fullscan, without any criterias. Loops through the 
+            folders, then the files and finally calculates the size of the 
+            folders in the list (does not include hidden or system files).
+            </summary>
+            <param name="path">The directory to be scanned</param>
+            <param name="bw">Active backgroundworker</param>
+            <param name="scanSub">Scan subfolders?</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.startSpecifiedScan(System.String,System.String[],System.ComponentModel.BackgroundWorker,System.Int64,System.Int32,System.Int32,System.DateTime,System.Boolean)">
+            <summary>
+            This method starts a specified scan. It first loops through the folders
+            then the files matching searchcriteria and finally calculates the size 
+            of the scanned folders (does not include hidden or system files).
+            </summary>
+            <param name="path">The directory to be scanned</param>
+            <param name="searchpattern">Filetypes to be searced for</param>
+            <param name="bw">Object of the BackgroundWorker from the userinterface</param>
+            <param name="fileSize">The minimum file size to scan for</param>
+            <param name="criterie1">Value for searching for date (0 = older then, 1 = newer then, -1 = no date scan)</param>
+            <param name="criterie2">Value for datecriteria (0 = CreationTime, 1 = Last modified, 2 = Last accessed)</param>
+            <param name="date">The date value to search for</param>
+            <param name="scanSub">Scan subfolders?</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.recordSuccessFolderAccess(CMF_Library.Folders)">
+            <summary>
+            This method records the folders that were accessed successfully
+            </summary>
+            <param name="success">The Folders object that was accessed</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.recordSuccessFileAccess(CMF_Library.Files)">
+            <summary>
+            This method records the files that were accessed successfully
+            </summary>
+            <param name="success">The Files object that was accessed</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.recordExceptions(System.String)">
+            <summary>
+            This method records the exception/error occuring. 
+            Only adds exception to list if it's not recorded.
+            </summary>
+            <param name="error">The error message (i.e: ex.Message where ex is Exception)</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.returnListOfFolders">
+            <summary>
+            This function returns a list of the folders that were accessed
+            </summary>
+            <returns>List&lt;Folders&gt;</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.returnListOfFiles">
+            <summary>
+            This function returns a list of the files that were accessed
+            </summary>
+            <returns>List&lt;Files&gt;</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.returnListOfErrors">
+            <summary>
+            This function returns a list of the exceptions/errors that occured 
+            during the scan.
+            </summary>
+            <returns>List&lt;string&gt;</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.returnFilesToBeShown(System.Collections.Generic.List{CMF_Library.Files},System.String)">
+            <summary>
+            Returns a List&lt;Files&gt; based on the parent folder.
+            </summary>
+            <param name="parentFolder">The files parent folder</param>
+            <param name="filesList">List&lt;Files&gt; containing the scanned files</param>
+            <returns>List&lt;Files&gt;</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.returnFilesToBeShown(System.Collections.Generic.List{CMF_Library.Files},System.String,System.Boolean)">
+            <summary>
+            Returns a List&lt;Files&gt; based on the parent folder. It also has a boolean 
+            value for on size; ascending or descending.
+            </summary>
+            <param name="parentFolder">The files parent folder</param>
+            <param name="filesList">List&lt;Files&gt; containing the scanned files</param>
+            <param name="sortAsc">Sort the list ascending (true) or descending (false)</param>
+            <returns>List&lt;Files&gt;</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countFilesScanned(System.String,System.Collections.Generic.List{CMF_Library.Folders})">
+            <summary>
+            Counts the total number of scanned files this folder (the parent) 
+            and the subfolders contains.It is not comparable to results in 
+            Windows Explorer as this is based on the number of scanned files.
+            As the scan excludes hidden and system folders/files, the number 
+            will not be accurate even if full scan without criterias is in action.
+            </summary>
+            <param name="parent">Name of the folder to start the count</param>
+            <param name="folderList">List&lt;Folders&gt; containing the folders</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countFilesScanned(System.String,System.Collections.Generic.List{CMF_Library.Folders},System.ComponentModel.BackgroundWorker)">
+            <summary>
+            Counts the total number of scanned files this folder (the parent) 
+            and the subfolders contains.It is not comparable to results in 
+            Windows Explorer as this is based on the scanned files.
+            As the scan excludes hidden and system folders/files, the number
+            will not be accurate even if full scan without criterias is in action. 
+            Has a backroundworker for the more time consuming calculations for folders 
+            with greater sizes.
+            </summary>
+            <param name="parent">Name of the folder to start the count</param>
+            <param name="folderList">List&lt;Folders&gt; containing the folders</param>
+            <param name="bw"></param>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countTotalNumberOfFiles(System.String,System.Collections.Generic.List{CMF_Library.Folders})">
+            <summary>
+            Counts the total number of files this folder (parent) and the subfolders contains.
+            The difference between this and countFilesScanned is that this returns the total 
+            number files this and its subfolders contains. But, it will not be 100% accurate 
+            as its based on the scanned values, where the system and hidden folders are 
+            excluded from the scan.
+            </summary>
+            <param name="parent">Name of the folder to start counter</param>
+            <param name="folderList">List&lt;Folders&gt; containing the folders</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countFilesToBeShown(System.Collections.Generic.List{CMF_Library.Files},System.String)">
+            <summary>
+            Counts the number of files to be shown/displayed.
+            </summary>
+            <param name="parentFolder">The files parent folder</param>
+            <param name="filesList">List&lt;Files&gt; containing the scanned files</param>
+            <returns></returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countFilesToMove(System.Collections.Generic.List{CMF_Library.Files})">
+            <summary>
+            Counts the number of files to be moved
+            </summary>
+            <param name="filesList">List&lt;Files&gt; containing the scanned files</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.countFilesToDelete(System.Collections.Generic.List{CMF_Library.Files})">
+            <summary>
+            Counts the number of files to be deleted
+            </summary>
+            <param name="filesList">List&lt;Files&gt; containing the scanned files</param>
+            <returns>int</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.moveFiles(System.String,System.String)">
+            <summary>
+            Moves the file(s) to a new location
+            </summary>
+            <param name="pathFrom">The path were the file(s) exists</param>
+            <param name="pathTo">The path to move the file(s) to</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.moveFilesToRecycleBin(System.String)">
+            <summary>
+            Moves the file(s) to the recycle bin
+            </summary>
+            <param name="filePath">The path to the file(s) thats to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.deleteFilesPermanently(System.String)">
+            <summary>
+            Deletes the file(s) permanently.
+            </summary>
+            <param name="filePath">The path to the file(s) thats to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.moveWholeFolder(System.String,System.String)">
+            <summary>
+            Move the whole folder and all its content (files and subfolders).
+            </summary>
+            <param name="pathFrom">The path where the folder exists</param>
+            <param name="pathTo">The path the folder is to be moved to</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.moveFoldersContent(System.String,System.String,System.Collections.Generic.List{CMF_Library.Folders},System.Collections.Generic.List{CMF_Library.Files})">
+            <summary>
+            Copies the folder (and subfolders) and moves the displayed 
+            files to the new location
+            </summary>
+            <param name="pathFrom">The path were the folder exists</param>
+            <param name="pathTo">The path to move the folders to</param>
+            <param name="subFolderList">List&lt;Folders&gt; with subfolders (do not include the point to move from)</param>
+            <param name="moveFileList">List&lt;Files&gt; with files to be moved</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.moveFolderToRecycleBin(System.String)">
+            <summary>
+            Moves the folder and its content to the recycle bin
+            </summary>
+            <param name="folderPath">Path to the folder to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.deleteFoldersPermanently(System.String)">
+            <summary>
+            Deletes the folder(s) permanently.
+            </summary>
+            <param name="folderPath">Path to folder to be deleted</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.convertSizeValue(System.Int64)">
+            <summary>
+            This method converts the current folder/files size. The lowest value is Bytes
+            and the current greatest is TerraBytes. This method takes the folder/files 
+            size value and converts upwards as long as the value is greater than one.
+            (i.e: if filesize = 1000 bytes, then the converted value displayed is 1 Kb)
+            </summary>
+            <param name="sizeValue">The original size of the folder/file</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.writeStatusToLog(System.Int32,System.String)">
+            <summary>
+            Starts to write the title to the log. If content is to be added after this title, 
+            this write method needs to be called after the content has been written to the log file.
+            </summary>
+            <param name="operation">
+            The value for the operation in progress 
+            (0 = Scan, 1 = Move files, 2 = Move files to recycle bin, 
+            3 = Delete files permanently, 4 = Move folders, 
+            5 = Move folders to recycle bin, 6 = Delete folders permanently)
+            </param>
+            <param name="dateDescription">The text to be set before the date in the log</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.writeProgressToLog">
+            <summary>
+            This method writes content to the logfile. 
+            The content written is set in setContent(string content).
+            </summary>
+        </member>
+        <member name="M:CMF_Library.ControlClass.setContent(System.String)">
+            <summary>
+            Sets the current text to be written to the logfile.
+            Can be one line or multiple lines seperated by "\r\n".
+            </summary>
+            <param name="logContent">Text to be written to log</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.setOperationPath(System.String)">
+            <summary>
+            Sets the path that currently is being processed (moved, deleted, scanned).
+            </summary>
+            <param name="operationPath">The path currently being processed</param>
+        </member>
+        <member name="M:CMF_Library.ControlClass.getProgress">
+            <summary>
+            Gets the current progress of what the 
+            backgroundworker is currently doing.
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.getSizeParameter">
+            <summary>
+            Gets the enum value for the current converted size.
+            It's value is based on the SizeEnum 
+            (bytes, Kb, Mb, Gb, Tb).
+            </summary>
+            <returns>Enum</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.getSizeConverted">
+            <summary>
+            Gets the converted size for the folder/file.
+            </summary>
+            <returns>double</returns>
+        </member>
+        <member name="M:CMF_Library.ControlClass.setProgress(System.String)">
+            <summary>
+            Sets the progress text of what the 
+            backgroundworker currently is doing. 
+            </summary>
+            <param name="progress">The operation/task done by backgroundworker</param>
+        </member>
+    </members>
+</doc>

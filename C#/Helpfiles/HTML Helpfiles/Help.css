@@ -1,0 +1,87 @@
+@media screen {
+  body {
+          min-height: 0%;
+          min-width: 0%;
+          max-width: 100%;
+          max-height: 100%;
+          font-size: 10pt;
+          /*fonts good to read on screen*/
+          font-family: Verdana, Arial, "Andale Mono", Trebuchet, "Sans serif";       
+  } /*body of the page*/
+  
+  a {
+      color: blue;
+  }
+  
+  a:visited {
+              /*set to blue since this isn't a webpage*/
+              color: blue;
+  } /*visited link*/
+  
+  #page {
+          position: absolute;
+          width: 100%;
+		      height: 100%;
+		      top:0;
+		      left:0;
+		      right:0;
+		      bottom:0; 
+		      overflow: auto;
+  } /*the whole page*/
+  
+  #heading {
+              position: absolute;
+              width: 100%; /*covers the whole page on the given location*/
+              height: 100px;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              color: #9400D3; /*purple*/
+              background-color: black;
+  } /*the headers style*/
+              
+  #header_text {
+                position: absolute;
+                width: 300px;
+                top: 25px;
+                right: 0;
+                bottom: 0;
+                left: 125px;
+                text-align: center;
+  } /*the text in the header*/
+  
+  #logo {
+          position: absolute;		  
+          height: 100px;
+          left: 10px;
+  } /*the application logo*/
+  
+  #image {
+            position: relative;
+            /*lesser font size to seperate from the content text*/
+            font-size: 8pt;              
+  } /*image(s) added to content*/
+  
+  #content {
+            position: absolute;
+            padding: 5px; /*some air for the content text*/
+            top: 100px;
+            right: auto;
+            bottom: auto;
+            left: auto;
+  } /*the pages content*/
+} /*media screen*/
+
+@media print {
+  body {
+         min-height: 0%;
+         min-width: 0%;
+         max-width: 100%;
+         max-height: 100%;
+         background-color:white;
+         color: black;
+         /*fonts good to read on paper*/
+         font-family: "Times new roman", Georgia, Courier, serif;
+  } /*print body*/
+} /*@media print*/
