@@ -4,6 +4,7 @@ This also includes development projects from Narvik, since Narvik was Bachelor l
 
 Programming languages:
 
+* 3DS MAX
 * Android (Java)
 * Databases (MySQL, Oracle)
 * Java
