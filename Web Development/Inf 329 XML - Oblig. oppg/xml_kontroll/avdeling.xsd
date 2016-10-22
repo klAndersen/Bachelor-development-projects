@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--SIMPLE TYPES-->
+<xs:simpleType name="string">
+  <xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="posInt">
+  <!--denne brukes for at identifikator (primær/fremmed-nøkkel) ikke skal bli under null-->
+  <!--tillater kun positive heltall-->
+  <xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="integer">
+  <xs:restriction base="xs:integer"/>
+</xs:simpleType>
+
+<xs:simpleType name="kravNavn">
+  <xs:restriction base="xs:string">
+    <!--har her satt at krav til oppgitt navn (avdeling) må minst være 5 tegn-->
+    <xs:minLength value="5" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!--avdelinger tilsvarer databasetabellen avdeling-->
+<xs:element name="avdelinger">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="avdeling" type="avdelingtype" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <!--"PRIMÆRNØKLER"-->
+  <!--navn på nøkkelen-->
+  <xs:key name="pkAvdeling">
+    <!--noden/elementet som nokkelen tilegnes-->
+    <xs:selector xpath="avdeling"/>
+    <!--dette gjelder et attributt, derfor brukes @, peker til hvilken "verdi" nokkelen gjelder-->
+    <xs:field xpath="@avdId"/>
+  </xs:key>
+</xs:element>
+
+<!--AVDELING-->
+<xs:complexType name="avdelingtype">
+  <xs:sequence>
+    <xs:element name="avdelingNavn" type="kravNavn"/>
+    <xs:element name="vekselLeder" type="string"/> 
+  </xs:sequence>
+  <xs:attribute name="avdId" type="posInt"/>
+</xs:complexType>
+
+</xs:schema>

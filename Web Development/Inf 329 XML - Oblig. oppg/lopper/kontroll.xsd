@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!--SIMPLE TYPES-->
+<xs:simpleType name="string">
+  <xs:restriction base="xs:string"/>
+</xs:simpleType>
+
+<xs:simpleType name="posInt">
+  <!--denne brukes for at identifikator (primær/fremmed-nøkkel) ikke skal bli under null-->
+  <!--tillater kun positive heltall-->
+  <xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="integer">
+  <xs:restriction base="xs:integer"/>
+</xs:simpleType>
+
+<xs:simpleType name="kravNavn">
+  <xs:restriction base="xs:string">
+    <!--har her satt at krav til oppgitt navn (avdeling og person) må minst være 5 tegn-->
+    <xs:minLength value="5" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!--ROT - TAGG-->
+<xs:element name="skolekorps">
+  <xs:complexType>
+    <xs:sequence>
+      <!--avdelinger tilsvarer databasetabellen avdeling-->
+      <xs:element name="avdelinger">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="avdeling" type="avdelingtype" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!--personer tilsvarer databasetabellen person (hvis barn er salg som det kan legges inn flere av)-->
+      <xs:element name="personer">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="person" type="persontype" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!--salg tilsvarer databasetabellen salg-->
+      <xs:element name="salg">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="salg" type="salgtype" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <!--init tilsvarer databasetabellen init (hvis barn er init som det kan legges inn flere av)-->
+      <xs:element name="init" >
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="init" type="inittype" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+  </xs:sequence>
+  </xs:complexType>
+  <!--"PRIMÆRNØKLER"-->
+  <!--navn på nøkkelen-->
+  <xs:key name="pkAvdeling">
+    <!--noden/elementet som nokkelen tilegnes-->
+    <xs:selector xpath="avdelinger/avdeling"/>
+    <!--dette gjelder et attributt, derfor brukes @, peker til hvilken "verdi" nokkelen gjelder-->
+    <xs:field xpath="@avdId"/>
+  </xs:key>
+  <xs:key name="pkPerson">
+    <xs:selector xpath="personer/person"/>
+    <xs:field xpath="@personId"/>
+  </xs:key>
+  <xs:key name="pkSalg">
+    <xs:selector xpath="salg/salg"/>
+    <xs:field xpath="@salgId"/>
+  </xs:key>
+  <xs:key name="pkInit">
+    <xs:selector xpath="init/init"/>
+    <xs:field xpath="@initId"/>
+  </xs:key>
+  <!--"FREMMEDNØKLER"-->
+  <!--navn på nøkkelen-->
+  <xs:keyref name="fkAvdeling" refer="pkAvdeling">
+    <!--noden/elementet som fremmednokkel tilegnes-->
+    <xs:selector xpath="personer/person/avdeling"/>
+    <!--dette gjelder et attributt, derfor brukes @, peker til hvilken "verdi" nøkkelen gjelder-->
+    <xs:field xpath="@avdId"/>
+  </xs:keyref>
+  <xs:keyref name="fkSalg" refer="pkPerson">
+    <xs:selector xpath="salg/salg/person"/>
+    <xs:field xpath="@personId"/>
+  </xs:keyref>
+</xs:element>
+
+<!--AVDELING-->
+<xs:complexType name="avdelingtype">
+  <xs:sequence>
+    <xs:element name="avdelingNavn" type="kravNavn"/>
+    <xs:element name="vekselLeder" type="string"/> 
+  </xs:sequence>
+  <xs:attribute name="avdId" type="posInt"/>
+</xs:complexType>
+
+<!--PERSON-->
+<xs:complexType name="persontype">
+  <xs:sequence>
+    <xs:element name="navn" type="kravNavn"/>
+    <xs:element name="vekselLordag" type="integer"/>
+    <xs:element name="levertLordag" type="erLevert"/>
+    <xs:element name="vekselSondag" type="integer"/> 
+    <xs:element name="levertSondag" type="erLevert"/> 
+    <xs:element name="avdeling" type="avdType" />
+  </xs:sequence>
+  <xs:attribute name="personId" type="posInt"/>
+</xs:complexType>
+
+<xs:complexType name="avdType">
+  <!--attributt som inneholder "fremmednøkkelen" til avdeling-->
+  <xs:attribute name="avdId" type="posInt"/>
+</xs:complexType>
+
+<xs:simpleType name="erLevert">
+  <xs:restriction base="xs:string">
+    <!--Levert/Ikke levert-->
+    <xs:pattern value="ja|nei" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!--SALG-->
+<xs:complexType name="salgtype">
+  <xs:sequence>
+    <xs:element name="dag" type="dagtype"/> 
+    <xs:element name="penger" type="integer"/>     
+    <xs:element name="person" type="persType"/>
+  </xs:sequence>
+  <xs:attribute name="salgId" type="posInt"/> 
+</xs:complexType>
+
+<xs:complexType name="persType">
+  <!--attributt som inneholder "fremmednøkkelen" til person-->
+  <xs:attribute name="personId" type="posInt"/>
+</xs:complexType>
+
+<xs:simpleType name="dagtype">
+  <xs:restriction base="xs:string">
+    <!--Dag er enten lørdag eller søndag-->
+    <xs:pattern value="lørdag|søndag" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!--INIT-->
+<xs:complexType name="inittype">
+  <xs:sequence>
+    <xs:element name="vekselStandard" type="integer"/>
+    <xs:element name="vekselTotalt" type="integer"/>
+  </xs:sequence>
+  <xs:attribute name="initId" type="posInt"/>
+</xs:complexType>
+
+</xs:schema>

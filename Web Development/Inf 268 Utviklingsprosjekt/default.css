@@ -1,0 +1,155 @@
+  /*SKJERM-MODUS*/
+  @media screen { 
+   body {
+          margin:0;
+          border:0;
+		    padding:0;
+          /*Har skalert i % fordi jeg kan da sette at hele sida fylles - 100%*/
+          min-height:0%;
+          min-width:0%;
+          max-width:100%;
+          max-height:100%;
+		    font-size: 10pt;
+          font-family: Verdana, Arial, "Andale Mono", Trebuchet, "Sans serif";       
+        } /*Slutt body*/
+	h2 {
+		text-align:center;
+		}
+	/*Brukes som advarsel, bl.a ved feil under innlogging*/
+	h2.red {
+		  	  color: red;
+		    }
+	/*Visning av linker*/
+	a {
+      color: blue;
+      font-size: 10pt;
+      }
+	/*Klasse for maskering/skjuling av linker*/
+	a.nonLink {
+		  	    color: #505050;
+		  	    text-decoration: none;
+		  	    cursor: pointer;
+		       }
+	/*Når musen er over "linken"*/
+	a:hover, a.nonLink:hover {
+		  	                    color: #6699CC;
+		                      }
+	/*venstrejustering av linkene*/								  
+	ul { 
+		 margin-left: 10px;
+		 padding-left: 10px;
+      }
+	/*Størrelse og posisjonering på innholdet i tabell-data*/
+	td {
+		 font-size: 10pt;
+		 text-align: left;	  
+		}
+	/*brukes for å sette en ramme rundt tabellene*/
+	.ramme {
+		     border: medium solid #eeeeee;
+		     width: 100px;
+		    }
+	/*brukes på administrering av campus, fagområde og nettverk
+	for ønsket effekt som vist på s.6 i Utviklingsoppg_2011*/
+	.ramme2 {
+		      border: medium solid #eeeeee;
+		      background-color: #eeeeee;
+		      width: 120px;
+		      }
+   /*Øverst på siden, "banneren*/
+   #heading {
+              position: fixed;
+              width: 100%;
+              height: 100px;
+              top: 0;
+              right: 0;
+              bottom: auto;
+              left: 0;
+              background:#e7edf8;
+              }
+	/* Justering av logo-er */       
+	#venstre_logo {
+		            position: fixed;		  
+		            height: 100px;
+		            left: 35px; 
+		            /*har kommet fram til dette via å ta 
+		            #venstre - logo's bredde (180 -110 = 70) 
+		            og deretter delt svaret på to (70/2 = 35) 
+		            for å finne ut hvor mye luft det skal 
+		            være på hver side av logoen*/
+		            }
+	#hoyre_logo {
+		          position: fixed;		  
+		          height: 100px;
+		          right: 35px;
+		          }
+	/*Venstre sidebar*/
+   #venstre {
+              position: fixed;    
+		        width: 180px;
+              top: 100px;        
+              bottom: 50px;
+              left: 0;
+              background:#f3f3f3;  
+              }
+   /*Hovedinnholdet*/
+   #innhold {		  
+		      position: fixed;
+		      padding:5px;
+            width: auto;
+		      height: auto;
+            top: 100px;
+		      /*disse er satt 10px kortere for at scrollbar skal ha plass/vises*/
+            right: 190px; 
+            bottom: 50px;
+            left: 180px;  
+            overflow: auto;
+		      background-color: white;		  
+		      }
+   /*Høyre sidebar*/
+   #hoyre {
+            position: fixed;
+		      padding:5px;        
+		      width: 180px;
+            height: auto;
+            top: 100px;        
+            bottom: 50px;
+            right: 0;
+            background:#f3f3f3;		  
+            }               
+   /*Bunnen av siden*/
+   #bunn {
+          position: fixed;
+		    padding:5px;
+          width: 100%;
+          height: 40px;
+          top: auto;
+          right: 0;
+          bottom: 0;
+          left: 0;	
+          background:#e7edf8;
+          }
+	/*Id for å lage policy slik at 
+	den ser ut som en link */
+	#policy {
+		      position: fixed;
+		      bottom: 40px;
+		      color: blue;
+	         right: 155px;
+		      cursor: pointer;
+		      font-size: 8pt;
+		      text-decoration: underline;
+		      }
+  }
+  /****UTSKRIFTSMODUS****/
+  @media print {
+   body {
+         min-height:0%;
+         min-width:0%;
+         max-width:100%;
+         max-height:100%;
+         background-color:white;
+         color: black;
+         font-family: "Times new roman", Georgia, Courier, serif;
+         }    
+  }

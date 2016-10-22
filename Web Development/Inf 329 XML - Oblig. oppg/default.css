@@ -1,0 +1,62 @@
+  @media screen { 
+   html, body {
+          margin:0;
+          border:0;
+		      padding:0;
+          /*Har skalert i % fordi jeg kan da sette at hele sida fylles - 100%*/
+          min-height:0%;
+          min-width:0%;
+          max-width:100%;
+          max-height:100%;
+		      font-size: 10pt;        
+          font-family: Verdana, Arial, "Andale Mono", Trebuchet, "Sans serif";  
+          }
+			 
+	#logo {
+			left:0;
+			height:100px; /*fyller hele toppdelen*/
+	}
+          
+    #topp {
+            /*dette gjelder for toppen av siden (heading/tittel med logo)*/
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: 0;         
+            background-color: #BBBBBB;                          
+            }
+            
+    #linker {
+            /*gjelder for visning av linker*/
+            position: fixed;
+            width: 100%;
+            height: 40px;
+            top: 100px;
+            font-size: 20px;
+            background-color: #e7edf8;
+            }            
+              
+    #resten {  
+            /*dette gjelder for resten av siden*/             
+            position: fixed;
+           
+            width: 100%;
+            top: 140px; /*starter her for da får linker avsatt 20 pixler*/
+            right:10px; /*10px for plass til scrollbar*/
+            bottom: 10px;;
+            left: 5px;    
+            overflow: auto; /*i tilfelle siden inneholder mye, legg til scrollbars*/
+            background-color: #f3f3f3;  
+            }
+  }
+
+  @media print {
+    html, body {
+          /*innstillinger for utskrift*/
+          background-color: white;
+          font-family: "Times new roman", serif;
+        }
+  }                                                           

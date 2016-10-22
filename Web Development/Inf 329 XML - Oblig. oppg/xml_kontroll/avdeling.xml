@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<avdelinger xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="avdeling.xsd">
+<avdeling avdId="1">
+<avdelingNavn>Auksjon</avdelingNavn>
+<vekselLeder>5</vekselLeder>
+</avdeling>
+<avdeling avdId="2">
+<avdelingNavn>Bøker</avdelingNavn>
+<vekselLeder>6</vekselLeder>
+</avdeling>
+</avdelinger>

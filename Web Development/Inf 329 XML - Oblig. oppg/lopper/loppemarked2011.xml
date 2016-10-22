@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<skolekorps xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="kontroll.xsd">
+<avdelinger>
+<avdeling avdId="1">
+<avdelingNavn>Auksjon</avdelingNavn>
+<vekselLeder>5</vekselLeder>
+</avdeling>
+<avdeling avdId="2">
+<avdelingNavn>Bøker</avdelingNavn>
+<vekselLeder>6</vekselLeder>
+</avdeling>
+</avdelinger>
+<personer>
+<person personId="1">
+<navn>Njål Dolonen</navn>
+<vekselLordag>-5000</vekselLordag>
+<levertLordag>nei</levertLordag>
+<vekselSondag>0</vekselSondag>
+<levertSondag>nei</levertSondag>
+<avdeling avdId="1" />
+</person>
+<person personId="2">
+<navn>Knut Knutsen</navn>
+<vekselLordag>0</vekselLordag>
+<levertLordag>nei</levertLordag>
+<vekselSondag>200</vekselSondag>
+<levertSondag>nei</levertSondag>
+<avdeling avdId="2" />
+</person>
+<person personId="3">
+<navn>Kari Karisen</navn>
+<vekselLordag>2500</vekselLordag>
+<levertLordag>nei</levertLordag>
+<vekselSondag>0</vekselSondag>
+<levertSondag>nei</levertSondag>
+<avdeling avdId="1" />
+</person>
+</personer>
+<salg>
+<salg salgId="1">
+<dag>lørdag</dag>
+<penger>2000</penger>
+<person personId="2" />
+</salg>
+<salg salgId="2">
+<dag>søndag</dag>
+<penger>400</penger>
+<person personId="2" />
+</salg>
+<salg salgId="3">
+<dag>søndag</dag>
+<penger>600</penger>
+<person personId="3" />
+</salg>
+<salg salgId="4">
+<dag>søndag</dag>
+<penger>700</penger>
+<person personId="3" />
+</salg>
+</salg>
+<init>
+<init initId="1">
+<vekselStandard>500</vekselStandard>
+<vekselTotalt>10000</vekselTotalt>
+</init>
+</init>
+</skolekorps>
