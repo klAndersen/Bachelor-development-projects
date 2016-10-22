@@ -11,3 +11,6 @@ Programming languages:
 * Visual Studio C++
 * Web development (HTML, CSS, JavaScript, PHP, XML)
 * XNA: Visual Studio C# 
+
+Bachelor thesis was developed using Visual Studio C#, and the original version can be found at SourceForge: 
+https://sourceforge.net/projects/cleanmyfolder/
